@@ -1,3 +1,8 @@
+body {
+     font-family: 'Karla';
+}
+
+
 .container {
     display: grid;
     grid-gap: 1%;
@@ -19,23 +24,33 @@
 */
 
 header {
-    grid-column: span 3 / auto;
+    grid-column: span 4 / auto;
     width: 100%;
+    height: 100%;
     text-align: center;
     font-size: 1.4em;
     background-color: #369;
     color: white;
 }
+.logo {
+    grid-column: span 4 / auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.4em;
+    background-color: #369;
+    color: white; 
+}
 
 main {
-    grid-column: span 3 /auto;
+    grid-column: span 4 /auto;
     width: 100%;
     background-color: white;
     
 }
 
 nav {
-    grid-column: span 3 / auto;
+    grid-column: span 4 / auto;
     width: 100%;
     text-align: center;
     font-size: 1.4em;
@@ -45,7 +60,7 @@ nav {
  
 
 footer {
-    grid-column: span 3 / auto;
+    grid-column: span 4 / auto;
     width: 100%;
     text-align: center;
     font-size: 1.4em;
@@ -53,3 +68,33 @@ footer {
     color: white;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    color: white;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #3458a7;
+}
