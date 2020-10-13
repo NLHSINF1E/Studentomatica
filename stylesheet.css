@@ -41,13 +41,23 @@ header {
     background-color: #369;
     color: white; 
 }
+.headerimage {
+    
+}
 
 main {
-    grid-column: span 4 /auto;
+    grid-column: span 1 /auto;
     width: 100%;
     background-color: white;
     
 }
+.main2 {
+    grid-column: span 2 /auto;
+    width: 100%;
+    background-color: white;
+    
+}
+
 
 nav {
     grid-column: span 4 / auto;
@@ -64,7 +74,7 @@ footer {
     width: 100%;
     text-align: center;
     font-size: 1.4em;
-    background-color: #690;
+    background-color: #77cccf;
     color: white;
 }
 
