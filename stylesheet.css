@@ -216,9 +216,6 @@ li.dropdown {
     display: block;
 }
 
-<<<<<<< HEAD
-/* Contact */
-=======
 /* homepage slider */
 
 
@@ -268,7 +265,8 @@ li.dropdown {
   from {opacity: .4}
   to {opacity: 1}
 }
->>>>>>> c45265b5b842c60aeddba1a50b2d2a7ca4df4ccb
+
+/* Contact */
 
 .contact{
     grid-column: span 4 / auto;
