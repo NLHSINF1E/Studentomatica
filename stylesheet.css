@@ -98,6 +98,14 @@ footer {
     float: left;
 }
 
+.copyrightvlak {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    float: left;
+}
+
 .contacttabel{
     width: auto;
     height: auto;
@@ -107,10 +115,10 @@ footer {
 }
 
 .socialmedia {
-    width: 11%;
-    margin-right: 3%;
+    width: 7%;
+    margin-right: %;
     height: auto;
-    
+    margin: 0 auto;
 }
 
 
@@ -208,7 +216,59 @@ li.dropdown {
     display: block;
 }
 
+<<<<<<< HEAD
 /* Contact */
+=======
+/* homepage slider */
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+>>>>>>> c45265b5b842c60aeddba1a50b2d2a7ca4df4ccb
 
 .contact{
     grid-column: span 4 / auto;
