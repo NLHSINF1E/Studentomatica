@@ -208,4 +208,29 @@ li.dropdown {
     display: block;
 }
 
+/* Contact */
 
+.contact{
+    grid-column: span 4 / auto;
+}
+
+.inputcontact1{
+    grid-column: span 4 / auto;
+}
+
+.inputcontact2{
+    grid-column: span 4 / auto;
+}
+
+.inputcontact3{
+    grid-column: span 4 / auto;
+}
+
+.textcontact{
+    
+}
+
+.contacttitle{
+    grid-column: span 4 / auto;
+    text-align:center;
+}
