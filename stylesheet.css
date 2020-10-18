@@ -69,17 +69,17 @@ header {
 /* pagina vlakken */
 
 .vlakkwartpagina {
-    grid-column: span 1 / auto;
+    grid-column: span 1 / 4;
     width: 100%;
     background-color: white;
+    
     
 }
 
 .vlakhalvepagina {
-    grid-column: span 2 / auto;
-    width: 100%;
+    grid-column: span 1 / -2;
     background-color: white;
-    
+
 }
 
 .vlak3kwartpagina {
@@ -299,10 +299,32 @@ li.dropdown {
 
 /* Contact */
 
-.textcontact{
-    
+.contactmidden{
+    grid-column: span 2 / -2;
+    border: solid black;
+    padding: 5%;
+}
+
+.contactblok{
+    width: 94%;
+    margin-bottom: 5%;
+    font-weight: bold;
+    font-size: 100%;
+    font-family: 'Karla';
+    border: solid #77cccf;
+    border-right: solid #77cccf;
+    border-left: solid #77cccf;
+    padding: 2%;
 }
 
 .contacttitle{
-    text-align:center;
+    text-align: center;
+    margin-bottom: 5%;
+    font-weight: bold;
+    font-size: 180%;
+}
+
+.contactsend{
+    text-align: center;
+    margin-bottom: 5%;  
 }

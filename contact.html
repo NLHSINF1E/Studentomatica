@@ -33,15 +33,15 @@
         <li style="float:right"><a class="active" href="contact.html">Contact</a></li>
     </ul>
 </nav>
-    
-<div class="vlakvolledigepagina">
+
+<div class="contactmidden">    
     <div class="vlakvolledigepagina contacttitle">Contactformulier</div>
-        <form action="contact.php" method="post" name="form" class="form-box">
-            <div class="vlakkwartpagina"><input type="text" name="name" placeholder="Enter Your Name" required></div><br>
-            <div class="vlakkwartpagina"><input type="email" name="email" placeholder="Enter Your Email" required></div><br>
-            <div class="vlakkwartpagina"><input type="tel" name="phone" placeholder="Enter Your Phone" required></div><br>
-            <div class="textarea"><textarea name="msg" placeholder="Enter Your Message Here..." required></textarea></div><br>
-            <div class="submit"><input type="submit" name="submit" value="Send" class="sub-btn"></div>
+        <form action="contact.php" method="post" name="form" class="vlakvolledigepagina">
+            <input class="contactblok" type="text" name="name" placeholder="Naam" required>
+            <input class="contactblok" type="email" name="email" placeholder="Email adres" required>
+            <input class="contactblok" type="tel" name="phone" placeholder="Telefoon nummer" required>
+            <textarea class="contactblok" style="resize: none" name="text" rows="10" placeholder="Uw bericht" required></textarea>
+            <div class="contactsend"><input type="submit" name="submit" value="Verstuur"></div>
         </form>
 </div>
     
