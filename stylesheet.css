@@ -325,6 +325,11 @@ li.dropdown {
 }
 
 .contactsend{
-    text-align: center;
-    margin-bottom: 5%;  
+    margin-left: 25%;
+    text-align: center; 
+    width: 50%;
+    border-radius: 8%;
+    background-color: #77cccf;
+    cursor: pointer;
 }
+
