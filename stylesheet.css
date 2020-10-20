@@ -338,3 +338,33 @@ li.dropdown {
     color: white;
 }
 
+/* Jaarovericht */
+
+.Tabeljaar
+{
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+#Roodjaar
+{
+    background-color: red;
+}
+
+.Tabellenjaar
+{
+    margin: 0 auto;
+
+}
+
+#Tabellinks
+{
+
+}
+
+#Tabelmidden
+{
+    margin: 50 auto;
+}
