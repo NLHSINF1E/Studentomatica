@@ -22,7 +22,7 @@
             </div>
         </nav>
     </div>
-</nav>   
+
 
 
     
@@ -50,51 +50,54 @@
 <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <img src="afbeeldingen/headerstudent2.jpg" style="width:100%">
+  <img src="afbeeldingen/headerstudent1.jpg" style="width:100%" alt="headerstudent2">
 </div>
 
 <div class="mySlides fade">
-  <img src="afbeeldingen/headerstudent3.jpg" style="width:100%">
+  <img src="afbeeldingen/headerstudent2.jpg" style="width:100%" alt="headerstudent3">
 </div>
 
 <div class="mySlides fade">
-  <img src="afbeeldingen/headerstudent4.jpg" style="width:100%">
+  <img src="afbeeldingen/headerstudent3.jpg" style="width:100%" alt="headerstudent4">
 </div>
 
 <div class="mySlides fade">
-  <img src="afbeeldingen/headerstudent1.jpg" style="width:100%">
+  <img src="afbeeldingen/headerstudent4.jpg" style="width:100%" alt="headerstudent1">
 </div>
 
 </div>
 
 <div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
 </div>
 
 </header>
   
 <script>
-var slideIndex = 0;
-showSlides();
+var slideIndex = 1;
+showSlides(slideIndex);
 
-function showSlides() {
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+      slides[i].style.display = "none";  
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+      dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 6000); // Change image every 6 seconds
+  dots[slideIndex-1].className += " active"; 
 }
     
 function myFunction() {
