@@ -79,6 +79,59 @@
 
 </header>
     
+<script>
+
+    var index = 0;
+    change();
+     
+    function change() {
+
+        //Collect all images with class 'slides'
+        var x = document.getElementsByClassName('mySlides');
+
+        //Set all the images display to 'none' (invisible)
+        for(var i = 0; i < x.length; i++) { 
+            x[i].style.display = "none"; 
+        }
+
+        //Increment index variable
+        index++;
+
+        //Set index to 1 if it's greater than the amount of images
+        if(index > x.length) { 
+            index = 1; 
+        }
+
+        //set image display to 'block' (visible)
+        x[index - 1].style.display = "block";
+        
+
+        //set loop to change image every 3000 milliseconds (3 seconds)
+        setTimeout(change, 3000);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" activeheader", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " activeheader";
+    }
+    
+</script>
+    
 <div class="vlakvolledigepagina">
     
      <h1 class="textcenter">Welkom op het studentenplatform "StudentOmatica"</h1>

@@ -339,7 +339,7 @@ nav {
   transition: background-color 0.6s ease;
 }
 
-.dot:hover {
+.activeheader, .dot:hover {
   background-color: #717171;
 }
 
@@ -365,7 +365,6 @@ nav {
 
 .contactmidden{
     grid-column: span 2 / -2;
-    border: solid black;
     padding: 5%;
 }
 
