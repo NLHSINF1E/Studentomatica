@@ -106,17 +106,6 @@ header {
     right: 7.6%;
 }
 
-.lirechts{
-    float: right;
-}
-
-.licenter{
-    float: center;
-}
-
-.lilinks{
-    float: left;
-}
 
 /* pagina vlakken */
 
@@ -219,24 +208,24 @@ nav {
 }
 
 .topnav {
-    overflow: hidden;
-    background-color: #f3f3f3;
+  overflow: hidden;
+  background-color: #f3f3f3;
 }
 
 .topnav a {
   float: left;
   display: block;
   color: black;
-    background-color: #f3f3f3; 
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 17px;
 }
 
-.active {
+#active {
     color: white;
     background-color: #3458a7;
+
 }
 
 .topnav .icon {
@@ -254,7 +243,6 @@ nav {
   outline: none;
   color: black;
   padding: 14px 16px;
-    font-size: 22px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
@@ -279,12 +267,12 @@ nav {
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #555;
-  color: white;
+  background-color: #ddd;
+  color:black;
 }
 
 .dropdown-content a:hover {
-  background-color: #666;
+  background-color: #ddd;
   color: black;
 }
 
@@ -323,78 +311,6 @@ nav {
   }
 }
 
-/*oude menustijl */
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border: 1px solid #e7e7e7;
-    background-color: #f3f3f3;
-    color: white;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: #666;
-    text-align: center;
-    padding: 15px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #ddd;
-}
-
-li a.active {
-    color: white;
-    background-color: #3458a7;
-}
-
-li a, .dropbtn {
-    display: inline-block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: #ddd;
-}
-
-li.dropdown {
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 /* homepage slider */
 
 
@@ -423,7 +339,7 @@ li.dropdown {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.dot:hover {
   background-color: #717171;
 }
 
