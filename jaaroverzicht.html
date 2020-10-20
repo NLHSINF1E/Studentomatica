@@ -1,80 +1,935 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Project StudentOmatica</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="stylesheet.css">
-      <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
-  </head>
+	<head>
+		<title>Project StudentOmatica</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="stylesheet.css">
+		<link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+	</head>
     
-<body class="container">
+    <body class="container">
     
-<div class="logo"><a href="home.html"><img src="afbeeldingen/Logozwarttransgroter.png" alt="Logozwart"></a></div>
+	<div class="logo"><a href="home.html"><img src="afbeeldingen/Logozwarttransgroter.png" alt="Logozwart"></a></div>
 
-<nav>
-    <ul>
-        <li><a href="/home.html">Home</a></li>
-        <li><a href="/studiefinanciering.html">Studiefinanciering</a></li>
-        <li><a class="active" href="/jaaroverzicht.html">Jaaroverzicht</a></li>
-    <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">Vakken</a>
-    <div class="dropdown-content">
-        <a href="/vakken/htmlcss.html">HTML &amp; CSS</a>
-        <a href="/vakken/php.html">PHP</a>
-        <a href="/vakken/project.html">Project</a>
-        <a href="/vakken/informatiemanagement.html">Informatie Management</a>
-        <a href="/vakken/slb.html">SLB</a>
-    </div>
-    </li>
-        <li><a href="/studieadvies.html">Studieadvies</a></li>
-        <li><a href="/docenten.html">Docenten</a></li>
-        <li><a href="/vragen.html">Vragen</a></li>
-        <li style="float:right"><a href="/contact.html">Contact</a></li>
-    </ul>
-</nav>  
+	<nav>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="studiefinanciering.html">Studiefinanciering</a></li>
+			<li><a class="active" href="jaaroverzicht.html">Jaaroverzicht</a></li>
+			<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">Vakken</a>
+		<div class="dropdown-content">
+			<a href="vakken/htmlcss.html">HTML &amp; CSS</a>
+			<a href="/vakken/php.html">PHP</a>
+			<a href="/vakken/project.html">Project</a>
+			<a href="/vakken/informatiemanagement.html">Informatie Management</a>
+			<a href="/vakken/slb.html">SLB</a>
+		</div>
+			</li>
+			<li><a href="studieadvies.html">Studieadvies</a></li>
+			<li><a href="docenten.html">Docenten</a></li>
+			<li><a href="vragen.html">Vragen</a></li>
+			<li style="float:right"><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>  
     
-<header>
+    <header>
+	
+	</header>
 
+	<div class="vlakvolledigepagina">
+		<h1>Jaaroverzicht</h1>
+		<p>In dit jaaroverzicht kunt u de algemene datums vinden voor de opleiding Informatica.
+		<br> Wij geven u de datums voor de vakanties, wanneer u zich voor de tentamens zou moeten inschrijven,
+		<br> wanneer de tentamens gehouden worden, bekende feestdagen en meer.</p>
+	</div>
 
-
-</header>
-  
-
-    
-<div class="vlakvolledigepagina">
-    
-     <h1>Jaaroverzicht</h1>
-     <p>In dit jaaroverzicht kunt u de algemene datums vinden voor de opleiding Informatica.
-     <br> Wij geven u de datums voor de vakanties, wanneer u zich voor de tentamens zou moeten inschrijven,
-     <br> wanneer de tentamens gehouden worden, bekende feestdagen en meer.</p>
-  
+	<div class="Tabellenjaar">
+		<table class="Tabeljaar" id="Tabellinks">
+		<thead>
+			<tr>
+				Januari
+			</tr>
+			<tr>
+				<th scope="col">Wk</th>
+				<th scope="col">Mo</th>
+				<th scope="col">Tu</th>
+				<th scope="col">We</th>
+				<th scope="col">Th</th>
+				<th scope="col">Fr</th>
+				<th scope="col">Sa</th>
+				<th scope="col">Su</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td></td>
+				<td></td>
+				<td id="Roodjaar">1</td>
+				<td id="Roodjaar">2</td>
+				<td id="Roodjaar">3</td>
+				<td id="Roodjaar">4</td>
+				<td id="Roodjaar">5</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>6</td>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>13</td>
+				<td>14</td>
+				<td>15</td>
+				<td>16</td>
+				<td>17</td>
+				<td>18</td>
+				<td>19</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>20</td>
+				<td>21</td>
+				<td>22</td>
+				<td>23</td>
+				<td>24</td>
+				<td>25</td>
+				<td>26</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>27</td>
+				<td>28</td>
+				<td>29</td>
+				<td>30</td>
+				<td>31</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+		</table>
+		<table class="Tabeljaar" id="Tabelmidden">
+		<thead>
+			<tr>
+				Februari
+			</tr>
+			<tr>
+				<th scope="col">Wk</th>
+				<th scope="col">Mo</th>
+				<th scope="col">Tu</th>
+				<th scope="col">We</th>
+				<th scope="col">Th</th>
+				<th scope="col">Fr</th>
+				<th scope="col">Sa</th>
+				<th scope="col">Su</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>5</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>1</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
+				<td>13</td>
+				<td>14</td>
+				<td>15</td>
+				<td>16</td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td>17</td>
+				<td>18</td>
+				<td>19</td>
+				<td>20</td>
+				<td>21</td>
+				<td>22</td>
+				<td>23</td>
+			</tr>
+			<tr>
+				<td>9</td>
+				<td>24</td>
+				<td>25</td>
+				<td>26</td>
+				<td>27</td>
+				<td>28</td>
+				<td>29</td>
+				<td></td>
+			</tr>
+		</tbody>
+		</table>
+		<table class="Tabeljaar">
+		<thead>
+			<tr>
+				Maart
+			</tr>
+			<tr>
+				<th scope="col">Wk</th>
+				<th scope="col">Mo</th>
+				<th scope="col">Tu</th>
+				<th scope="col">We</th>
+				<th scope="col">Th</th>
+				<th scope="col">Fr</th>
+				<th scope="col">Sa</th>
+				<th scope="col">Su</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>9</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+				<td>7</td>
+				<td>8</td>
+			</tr>
+			<tr>
+				<td>11</td>
+				<td>9</td>
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
+				<td>13</td>
+				<td>14</td>
+				<td>15</td>
+			</tr>
+			<tr>
+				<td>12</td>
+				<td>16</td>
+				<td>17</td>
+				<td>18</td>
+				<td>19</td>
+				<td>20</td>
+				<td>21</td>
+				<td>22</td>
+			</tr>
+			<tr>
+				<td>13</td>
+				<td>23</td>
+				<td>24</td>
+				<td>25</td>
+				<td>26</td>
+				<td>27</td>
+				<td>28</td>
+				<td>29</td>
+			</tr>
+			<tr>
+				<td>14</td>
+				<td>30</td>
+				<td>31</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+		</table>
+		<table class="Tabeljaar">
+		<thead>
+			<tr>
+				April
+			</tr>
+			<tr>
+				<th scope="col">Wk</th>
+				<th scope="col">Mo</th>
+				<th scope="col">Tu</th>
+				<th scope="col">We</th>
+				<th scope="col">Th</th>
+				<th scope="col">Fr</th>
+				<th scope="col">Sa</th>
+				<th scope="col">Su</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>14</td>
+				<td></td>
+				<td></td>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td>15</td>
+				<td>6</td>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
+			</tr>
+			<tr>
+				<td>16</td>
+				<td>13</td>
+				<td>14</td>
+				<td>15</td>
+				<td>16</td>
+				<td>17</td>
+				<td>18</td>
+				<td>19</td>
+			</tr>
+			<tr>
+				<td>17</td>
+				<td>20</td>
+				<td>21</td>
+				<td>22</td>
+				<td>23</td>
+				<td>24</td>
+				<td>25</td>
+				<td>26</td>
+			</tr>
+			<tr>
+				<td>18</td>
+				<td>27</td>
+				<td>28</td>
+				<td>29</td>
+				<td>30</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+		</table>
+		<table class="Tabeljaar">
+		<thead>
+			<tr>
+				Mei
+			</tr>
+			<tr>
+				<th scope="col">Wk</th>
+				<th scope="col">Mo</th>
+				<th scope="col">Tu</th>
+				<th scope="col">We</th>
+				<th scope="col">Th</th>
+				<th scope="col">Fr</th>
+				<th scope="col">Sa</th>
+				<th scope="col">Su</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>18</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>19</td>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+				<td>10</td>
+			</tr>
+			<tr>
+				<td>20</td>
+				<td>11</td>
+				<td>12</td>
+				<td>13</td>
+				<td>14</td>
+				<td>15</td>
+				<td>16</td>
+				<td>17</td>
+			</tr>
+			<tr>
+				<td>21</td>
+				<td>18</td>
+				<td>19</td>
+				<td>20</td>
+				<td>21</td>
+				<td>22</td>
+				<td>23</td>
+				<td>24</td>
+			</tr>
+			<tr>
+				<td>22</td>
+				<td>25</td>
+				<td>26</td>
+				<td>27</td>
+				<td>28</td>
+				<td>29</td>
+				<td>30</td>
+				<td>31</td>
+			</tr>
+		</tbody>
+		</table>
+		<table class="Tabeljaar">
+		<thead>
+			<tr>
+				Juni
+			</tr>
+			<tr>
+				<th scope="col">Wk</th>
+				<th scope="col">Mo</th>
+				<th scope="col">Tu</th>
+				<th scope="col">We</th>
+				<th scope="col">Th</th>
+				<th scope="col">Fr</th>
+				<th scope="col">Sa</th>
+				<th scope="col">Su</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>23</td>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+				<td>7</td>
+			</tr>
+			<tr>
+				<td>24</td>
+				<td>8</td>
+				<td>9</td>
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
+				<td>13</td>
+				<td>14</td>
+			</tr>
+			<tr>
+				<td>25</td>
+				<td>15</td>
+				<td>16</td>
+				<td>17</td>
+				<td>18</td>
+				<td>19</td>
+				<td>20</td>
+				<td>21</td>
+			</tr>
+			<tr>
+				<td>26</td>
+				<td>22</td>
+				<td>23</td>
+				<td>24</td>
+				<td>25</td>
+				<td>26</td>
+				<td>27</td>
+				<td>28</td>
+			</tr>
+			<tr>
+				<td>27</td>
+				<td>29</td>
+				<td>30</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+		</table>
+		<table class="Tabeljaar">
+		<thead>
+			<tr>
+				Juli
+			</tr>
+			<tr>
+				<th scope="col">Wk</th>
+				<th scope="col">Mo</th>
+				<th scope="col">Tu</th>
+				<th scope="col">We</th>
+				<th scope="col">Th</th>
+				<th scope="col">Fr</th>
+				<th scope="col">Sa</th>
+				<th scope="col">Su</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>27</td>
+				<td></td>
+				<td></td>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td>28</td>
+				<td>6</td>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
+			</tr>
+			<tr>
+				<td>29</td>
+				<td>13</td>
+				<td>14</td>
+				<td>15</td>
+				<td>16</td>
+				<td>17</td>
+				<td>18</td>
+				<td>19</td>
+			</tr>
+			<tr>
+				<td>30</td>
+				<td>20</td>
+				<td>21</td>
+				<td>22</td>
+				<td>23</td>
+				<td>24</td>
+				<td>25</td>
+				<td>26</td>
+			</tr>
+			<tr>
+				<td>31</td>
+				<td>27</td>
+				<td>28</td>
+				<td>29</td>
+				<td>30</td>
+				<td>31</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+		</table>
+		<table class="Tabeljaar">
+		<thead>
+			<tr>
+				Augustus
+			</tr>
+			<tr>
+				<th scope="col">Wk</th>
+				<th scope="col">Mo</th>
+				<th scope="col">Tu</th>
+				<th scope="col">We</th>
+				<th scope="col">Th</th>
+				<th scope="col">Fr</th>
+				<th scope="col">Sa</th>
+				<th scope="col">Su</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>31</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>1</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>32</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+			</tr>
+			<tr>
+				<td>33</td>
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
+				<td>13</td>
+				<td>14</td>
+				<td>15</td>
+				<td>16</td>
+			</tr>
+			<tr>
+				<td>34</td>
+				<td>17</td>
+				<td>18</td>
+				<td>19</td>
+				<td>20</td>
+				<td>21</td>
+				<td>22</td>
+				<td>23</td>
+			</tr>
+			<tr>
+				<td>35</td>
+				<td>24</td>
+				<td>25</td>
+				<td>26</td>
+				<td>27</td>
+				<td>28</td>
+				<td>29</td>
+				<td>30</td>
+			</tr>
+			<tr>
+				<td>36</td>
+				<td>31</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+		</table>
+		<br>
+		<table class="Tabeljaar">
+		<thead>
+			<tr>
+				September
+			</tr>
+			<tr>
+				<th scope="col">Wk</th>
+				<th scope="col">Mo</th>
+				<th scope="col">Tu</th>
+				<th scope="col">We</th>
+				<th scope="col">Th</th>
+				<th scope="col">Fr</th>
+				<th scope="col">Sa</th>
+				<th scope="col">Su</th>
+			</tr>
+		<tbody>
+			<tr>
+				<td>36</td>
+				<td></td>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<td>37</td>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
+				<td>13</td>
+			</tr>
+			<tr>
+				<td>38</td>
+				<td>14</td>
+				<td>15</td>
+				<td>16</td>
+				<td>17</td>
+				<td>18</td>
+				<td>19</td>
+				<td>20</td>
+			</tr>
+			<tr>
+				<td>39</td>
+				<td>21</td>
+				<td>22</td>
+				<td>23</td>
+				<td>24</td>
+				<td>25</td>
+				<td>26</td>
+				<td>27</td>
+			</tr>
+			<tr>
+				<td>40</td>
+				<td>28</td>
+				<td>29</td>
+				<td>30</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+		</table>
+		<br>
+		<table class="Tabeljaar">
+		<thead>
+			<tr>
+				Oktober
+			</tr>
+			<tr>
+				<th scope="col">Wk</th>
+				<th scope="col">Mo</th>
+				<th scope="col">Tu</th>
+				<th scope="col">We</th>
+				<th scope="col">Th</th>
+				<th scope="col">Fr</th>
+				<th scope="col">Sa</th>
+				<th scope="col">Su</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>40</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<td>41</td>
+				<td>5</td>
+				<td>6</td>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+				<td>10</td>
+				<td>11</td>
+			</tr>
+			<tr>
+				<td>42</td>
+				<td>12</td>
+				<td>13</td>
+				<td>14</td>
+				<td>15</td>
+				<td>16</td>
+				<td>17</td>
+				<td>18</td>
+			</tr>
+			<tr>
+				<td>43</td>
+				<td>19</td>
+				<td>20</td>
+				<td>21</td>
+				<td>22</td>
+				<td>23</td>
+				<td>24</td>
+				<td>25</td>
+			</tr>
+			<tr>
+				<td>44</td>
+				<td>26</td>
+				<td>27</td>
+				<td>28</td>
+				<td>29</td>
+				<td>30</td>
+				<td>31</td>
+				<td></td>
+			</tr>
+		</tbody>
+		</table>
+		<br>
+		<table class="Tabeljaar">
+		<thead>
+			<tr>
+				November
+			</tr>
+			<tr>
+				<th scope="col">Wk</th>
+				<th scope="col">Mo</th>
+				<th scope="col">Tu</th>
+				<th scope="col">We</th>
+				<th scope="col">Th</th>
+				<th scope="col">Fr</th>
+				<th scope="col">Sa</th>
+				<th scope="col">Su</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>44</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td>45</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+				<td>7</td>
+				<td>8</td>
+			</tr>
+			<tr>
+				<td>46</td>
+				<td>9</td>
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
+				<td>13</td>
+				<td>14</td>
+				<td>15</td>
+			</tr>
+			<tr>
+				<td>47</td>
+				<td>16</td>
+				<td>17</td>
+				<td>18</td>
+				<td>19</td>
+				<td>20</td>
+				<td>21</td>
+				<td>22</td>
+			</tr>
+			<tr>
+				<td>48</td>
+				<td>23</td>
+				<td>24</td>
+				<td>25</td>
+				<td>26</td>
+				<td>27</td>
+				<td>28</td>
+				<td>29</td>
+			</tr>
+			<tr>
+				<td>49</td>
+				<td>30</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+		</table>
+		<table class="Tabeljaar">
+		<thead>
+			<tr>
+				December
+			</tr>
+			<tr>
+				<th scope="col">Wk</th>
+				<th scope="col">Mo</th>
+				<th scope="col">Tu</th>
+				<th scope="col">We</th>
+				<th scope="col">Th</th>
+				<th scope="col">Fr</th>
+				<th scope="col">Sa</th>
+				<th scope="col">Su</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>49</td>
+				<td></td>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<td>50</td>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
+				<td>13</td>
+			</tr>
+			<tr>
+				<td>51</td>
+				<td>14</td>
+				<td>15</td>
+				<td>16</td>
+				<td>17</td>
+				<td>18</td>
+				<td>19</td>
+				<td>20</td>
+			</tr>
+			<tr>
+				<td>52</td>
+				<td>21</td>
+				<td>22</td>
+				<td>23</td>
+				<td>24</td>
+				<td>25</td>
+				<td>26</td>
+				<td>27</td>
+			</tr>
+			<tr>
+				<td>53</td>
+				<td>28</td>
+				<td>29</td>
+				<td>30</td>
+				<td>31</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
 </div>
 
 <div class="vlakkwartpagina">
-     <h1>Vakanties</h1>
+     <h1>	Vakanties </h1>
      <p>	Kerstvakantie 		<br>tot 05-01-2020
      <br>	Voorjaarsvakantie	<br>15-02-2020 tot 23-02-2020
 	 <br>	Meivakantie			<br>25-03-2020 tot 03-05-2020
 	 <br>	Zomervakantie		<br>04-07-2020 tot 28-06-2020
 	 <br>	Herfstvakantie		<br>10-10-2020 tot 18-10-2020
-	 <br>	Kerstvakantie		<br>19-12-2020 tot 03-01-2021</p>
-    
-    
+	 <br>	Kerstvakantie		<br>19-12-2020 tot 03-01-2021 </p>
 </div>
     
 <div class="vlak3kwartpagina">
-     <h1>Feestdagen</h1>
-     <p>Nieuwjaarsdag: 1 jan
-	 <br>Goede vrijdag: 10 apr
-	 <br>Pasen: 12 en 13 apr
-	 <br>Koningsdag: 27 apr
-	 <br>Bevrijdingsdag: 5 mei
-	 <br>Hemelvaartsdag: 21 mei
-	 <br>Pinksteren: 31 mei en 1 juni
-	 <br>Eerste kerstdag: 25 dec
-	 <br>Tweede kerstdag: 26 dec
-	 </p>
+	<h1>Feestdagen</h1>
+	<p>Nieuwjaarsdag: 1 jan
+	<br>Goede vrijdag: 10 apr
+	<br>Pasen: 12 en 13 apr
+	<br>Koningsdag: 27 apr
+	<br>Bevrijdingsdag: 5 mei
+	<br>Hemelvaartsdag: 21 mei
+	<br>Pinksteren: 31 mei en 1 juni
+	<br>Eerste kerstdag: 25 dec
+	<br>Tweede kerstdag: 26 dec
+	</p>
     
     
 </div>
@@ -102,9 +957,9 @@
     
         <div class="footervlak">
         <h5>Volg ons op Social Media:</h5>
-        <a href="http://facebook.nl>"><img class="socialmedia" src="/afbeeldingen/021-facebook.png" alt="socialfacebook"></a>
-        <a href="http://instagram.com>"><img class="socialmedia" src="/afbeeldingen/025-instagram.png" alt="socialinstagram"></a>
-        <a href="http://twitter.com>"><img class="socialmedia" src="/afbeeldingen/043-twitter.png" alt="socialtwitter"></a>
+        <a href="http://facebook.nl>"><img class="socialmedia" src="afbeeldingen/021-facebook.png" alt="socialfacebook"></a>
+        <a href="http://instagram.com>"><img class="socialmedia" src="afbeeldingen/025-instagram.png" alt="socialinstagram"></a>
+        <a href="http://twitter.com>"><img class="socialmedia" src="afbeeldingen/043-twitter.png" alt="socialtwitter"></a>
         </div>
 
         <div class="copyrightvlak"> 
