@@ -403,31 +403,25 @@ nav {
 
 /* Jaarovericht */
 
+.ContTabellenjaar
+{
+  display: grid;
+  grid-template-rows: 200px 200px 200px 10px;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-gap: 10px 20px;
+}
+
 .Tabeljaar
 {
-    text-align: center;
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  background-color: #f3f3f3;
 }
 
-#Roodjaar
+#Speciaaljaar
 {
-    background-color: red;
-}
-
-.Tabellenjaar
-{
-    margin: 0 auto;
-
-}
-
-#Tabellinks
-{
-
-}
-
-#Tabelmidden
-{
-    margin: 50 auto;
+  background-color: #3458a7;
+  color: white; 
 }
