@@ -427,6 +427,7 @@ nav {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /* Vragen */
 
 =======
@@ -465,5 +466,10 @@ nav {
 .plattegrondemmen {
     float:left;
     
+}
+>>>>>>> Stashed changes
+=======
+.darkmode{
+    background-color: black;
 }
 >>>>>>> Stashed changes
