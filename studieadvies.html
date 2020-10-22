@@ -6,33 +6,35 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="stylesheet.css">
       <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
-  </head>
+      <script type="text/javascript" src="javascript.js"></script>
+    </head>
     
 <body class="container">
     
 <div class="logo"><a href="home.html"><img src="afbeeldingen/Logozwarttransgroter.png" alt="Logozwart"></a></div>
 
 <nav>
-    <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="studiefinanciering.html">Studiefinanciering</a></li>
-        <li><a href="jaaroverzicht.html">Jaaroverzicht</a></li>
-    <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">Vakken</a>
-    <div class="dropdown-content">
-        <a href="htmlcss.html">HTML &amp; CSS</a>
-        <a href="php.html">PHP</a>
-        <a href="project.html">Project</a>
-        <a href="informatiemanagement.html">Informatie Management</a>
-        <a href="slb.html">SLB</a>
+    <div class="topnav" id="myTopnav">
+        <a href="home.html">Home</a>
+        <a href="studiefinanciering.html">Studiefinanciering</a>
+        <a href="jaaroverzicht.html" >Jaaroverzicht</a>
+        <div class="dropdown">
+            <button class="dropbtn">Vakken</button>
+            <div class="dropdown-content">
+                <a href="htmlcss.html" >HTML &amp; CSS</a>
+                <a href="php.html">PHP</a>
+                <a href="project.html">Project</a>
+                <a href="informatiemanagement.html" >Informatie Management</a>
+                <a href="slb.html">SLB</a>
+            </div>
+        </div>
+        <a href="studieadvies.html" id="active">Studieadvies</a>
+        <a href="docenten.html" >Docenten</a>
+        <a href="vragen.html">Vragen</a>
+        <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-    </li>
-        <li><a class="active" href="studieadvies.html">Studieadvies</a></li>
-        <li><a href="docenten.html">Docenten</a></li>
-        <li><a href="vragen.html">Vragen</a></li>
-        <li style="float:right"><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>  
+</nav>    
     
 <header>
 

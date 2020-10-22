@@ -6,110 +6,145 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="stylesheet.css">
       <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
-  </head>
+      <script type="text/javascript" src="javascript.js"></script>
+    </head>
     
 <body class="container">
     
 <div class="logo"><a href="home.html"><img src="afbeeldingen/Logozwarttransgroter.png" alt="Logozwart"></a></div>
 
-<nav>
-    <ul>
-        <li><a class="active" href="home.html">Home</a></li>
-        <li><a href="studiefinanciering.html">Studiefinanciering</a></li>
-        <li><a href="jaaroverzicht.html">Jaaroverzicht</a></li>
-    <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">Vakken</a>
-    <div class="dropdown-content">
-        <a href="htmlcss.html">HTML &amp; CSS</a>
-        <a href="php.html">PHP</a>
-        <a href="project.html">Project</a>
-        <a href="informatiemanagement.html">Informatie Management</a>
-        <a href="slb.html">SLB</a>
+<nav>  
+    <div class="topmenu">
+        <nav>
+            <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Dark Mode?</a>
+            <a href="#news">NL</a>
+            <a href="#contact">ENG</a>
+            </div>
+        </nav>
     </div>
-    </li>
-        <li><a href="studieadvies.html">Studieadvies</a></li>
-        <li><a href="docenten.html">Docenten</a></li>
-        <li><a href="vragen.html">Vragen</a></li>
-        <li style="float:right"><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>     
+</nav>
+    
+<nav>
+    <div class="topnav" id="myTopnav">
+        <a href="home.html" id="active">Home</a>
+        <a href="studiefinanciering.html">Studiefinanciering</a>
+        <a href="jaaroverzicht.html">Jaaroverzicht</a>
+        <div class="dropdown">
+            <button class="dropbtn">Vakken</button>
+            <div class="dropdown-content">
+                <a href="htmlcss.html">HTML &amp; CSS</a>
+                <a href="php.html">PHP</a>
+                <a href="project.html">Project</a>
+                <a href="informatiemanagement.html">Informatie Management</a>
+                <a href="slb.html">SLB</a>
+            </div>
+        </div>
+        <a href="studieadvies.html">Studieadvies</a>
+        <a href="docenten.html">Docenten</a>
+        <a href="vragen.html">Vragen</a>
+        <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+</nav>
     
 <header>
 
 <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <img src="afbeeldingen/headerstudent2.jpg" style="width:100%">
+  <img src="afbeeldingen/headerstudent1.jpg" style="width:100%" alt="headerstudent2">
 </div>
 
 <div class="mySlides fade">
-  <img src="afbeeldingen/headerstudent3.jpg" style="width:100%">
+  <img src="afbeeldingen/headerstudent2.jpg" style="width:100%" alt="headerstudent3">
 </div>
 
 <div class="mySlides fade">
-  <img src="afbeeldingen/headerstudent4.jpg" style="width:100%">
+  <img src="afbeeldingen/headerstudent3.jpg" style="width:100%" alt="headerstudent4">
 </div>
 
 <div class="mySlides fade">
-  <img src="afbeeldingen/headerstudent1.jpg" style="width:100%">
+  <img src="afbeeldingen/headerstudent4.jpg" style="width:100%" alt="headerstudent1">
 </div>
 
 </div>
 
 <div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
 </div>
 
 </header>
-  
+    
 <script>
-var slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 6000); // Change image every 6 seconds
-}
+    var index = 0;
+    change();
+     
+    function change() {
+
+        //Collect all images with class 'slides'
+        var x = document.getElementsByClassName('mySlides');
+
+        //Set all the images display to 'none' (invisible)
+        for(var i = 0; i < x.length; i++) { 
+            x[i].style.display = "none"; 
+        }
+
+        //Increment index variable
+        index++;
+
+        //Set index to 1 if it's greater than the amount of images
+        if(index > x.length) { 
+            index = 1; 
+        }
+
+        //set image display to 'block' (visible)
+        x[index - 1].style.display = "block";
+        
+
+        //set loop to change image every 3000 milliseconds (3 seconds)
+        setTimeout(change, 3000);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" activeheader", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " activeheader";
+    }
+    
 </script>
     
 <div class="vlakvolledigepagina">
     
-     <h1>Tekst</h1>
-     <p>Vestibulum consectetur sit amet nisi ut consectetur. Praesent efficitur, nibh vitae fringilla scelerisque, est neque faucibus quam, in iaculis purus libero eget mauris. Curabitur et luctus sapien, ac gravida orci. Aliquam erat volutpat. In hac habitasse platea dictumst. Aenean commodo, arcu a commodo efficitur, libero dolor mollis turpis, non posuere orci leo eget enim. Curabitur sit amet elementum orci, pulvinar dignissim urna. Morbi id ex eu ex congue laoreet. Aenean tincidunt dolor justo, semper pretium libero luctus nec. Ut vulputate metus accumsan leo imperdiet tincidunt. Phasellus nec rutrum dolor. Cras imperdiet sollicitudin arcu, id interdum nibh fermentum in.</p>
+     <h1 class="textcenter">Welkom op het studentenplatform "StudentOmatica"</h1>
   
 </div>
-
-<div class="vlakkwartpagina">
-     <h1>Tekst</h1>
-     <p>Vestibulum consectetur sit amet nisi ut consectetur. Praesent efficitur, nibh vitae fringilla scelerisque, est neque faucibus quam, in iaculis purus libero eget mauris. Curabitur et luctus sapien, ac gravida orci. Aliquam erat volutpat. In hac habitasse platea dictumst. Aenean commodo, arcu a commodo efficitur, libero dolor mollis turpis, non posuere orci leo eget enim. Curabitur sit amet elementum orci, pulvinar dignissim urna. Morbi id ex eu ex congue laoreet. Aenean tincidunt dolor justo, semper pretium libero luctus nec. Ut vulputate metus accumsan leo imperdiet tincidunt. Phasellus nec rutrum dolor. Cras imperdiet sollicitudin arcu, id interdum nibh fermentum in.</p>
     
-    
-</div>
-    
-<div class="vlak3kwartpagina">
+<div class="vlakvolledigepagina">
      <h1>Tekst</h1>
      <p>Vestibulum consectetur sit amet nisi ut consectetur. Praesent efficitur, nibh vitae fringilla scelerisque, est neque faucibus quam, in iaculis purus libero eget mauris. Curabitur et luctus sapien, ac gravida orci. Aliquam erat volutpat. In hac habitasse platea dictumst. Aenean commodo, arcu a commodo efficitur, libero dolor mollis turpis, non posuere orci leo eget enim. Curabitur sit amet elementum orci, pulvinar dignissim urna. Morbi id ex eu ex congue laoreet. Aenean tincidunt dolor justo, semper pretium libero luctus nec. Ut vulputate metus accumsan leo imperdiet tincidunt. Phasellus nec rutrum dolor. Cras imperdiet sollicitudin arcu, id interdum nibh fermentum in.</p>
     
     
 </div>
 
-
-    
 <footer>
     
     <div class="footercontainer">
@@ -145,7 +180,7 @@ function showSlides() {
     
         
 </footer>
-    
+   
 </body>
     
 </html>
