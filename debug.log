@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 [1015/223933.513:ERROR:directory_reader_win.cc(43)] FindFirstFile: Het systeem kan het opgegeven pad niet vinden. (0x3)
 [1019/142336.805:ERROR:directory_reader_win.cc(43)] FindFirstFile: Het systeem kan het opgegeven pad niet vinden. (0x3)
+=======
+
+[1020/193706.854:ERROR:directory_reader_win.cc(43)] FindFirstFile: Het systeem kan het opgegeven pad niet vinden. (0x3)
+>>>>>>> 84a6ad500803c1b9b6d69ad14bf4ee0952da9fe1
