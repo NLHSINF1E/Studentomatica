@@ -426,5 +426,44 @@ nav {
   color: white; 
 }
 
+<<<<<<< Updated upstream
 /* Vragen */
 
+=======
+/* Studieadvies */
+
+.StudieAdviesCentre {
+    grid-column: span 4 / auto;
+    width: 100%;
+    background-color: white;
+    text-align: center; 
+    
+}
+
+.ICT-Beheer {
+    grid-column: span 2 / auto;
+    width: 100%;
+    background-color: white;
+    text-align: center; 
+}
+
+.TechnischeInformatica {
+    grid-column: span 2 / auto;
+    width: 100%;
+    background-color: white;
+    text-align: center; 
+}
+
+.EmmenMap {
+    grid-column: span 1 / auto;
+    background-color: white;
+    width: 100%;
+    align-content: right;
+        
+}
+
+.plattegrondemmen {
+    float:left;
+    
+}
+>>>>>>> Stashed changes
