@@ -328,3 +328,27 @@ li.dropdown {
     text-align: center;
     margin-bottom: 5%;  
 }
+
+/* Docenten */
+
+.docentenfotos{
+    grid-column: span -2 / -2;
+    border: solid black;
+    padding: 5%;
+    width: 400%;
+    height: auto;
+}
+
+.gerjantekst{
+    grid-column: span -2 / 2;
+    border: solid black;
+    padding: 5%;
+    width: 296%;
+    height: auto;
+
+}
+
+.docentenfoto{
+    margin: auto;
+    width: 100%;
+}
