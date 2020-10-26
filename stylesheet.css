@@ -509,7 +509,15 @@ nav {
 
 /* Jaarovericht */
 
-.ContTabellenjaar
+.Flex-container-jaar
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+
+}
+/*
 {
   display: grid;
   grid-template-rows: 30% 30% 30% 100%;
@@ -518,6 +526,7 @@ nav {
   width: 100%;
   height: auto;
 }
+*/
 
 .Tabeljaar
 {
@@ -590,20 +599,42 @@ nav {
 }
 
 .EmmenMap {
-    grid-column: span 1 / auto;
+    grid-column: span 4 / auto;
     background-color: white;
     width: 100%;
-    align-content: right;
+   
         
 }
 
+.stages {
+    
+    grid-column: span 4 / auto;
+    width: 100%;
+    text-align: center;
+}
+
 .plattegrondemmen {
-    float:left;
+    grid-column: span 4 / auto;
+    background-color: white;
+    width: 100%; 
     
 }
 
+.bijtekst {
+    font-size:50%;
+    text-align: right;
+    
+}
 .darkmode{
     background-color: black;
 }
 
-/* Vragen */
+
+
+
+@media screen and (max-width: 600px) {
+    .plattegrondemmen {
+        width:100%;
+    }
+}
+
