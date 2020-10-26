@@ -7,64 +7,58 @@
       <link rel="stylesheet" href="stylesheet.css">
       <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
       <script type="text/javascript" src="javascript.js"></script>
-    </head>
+  </head>
     
 <body class="container">
     
-<div class="logo"><a href="home.html"><img src="afbeeldingen/Logo_zwart.png" alt="Logozwart"></a></div>
-
+<div class="logo"><a href="home.html"><img src="afbeeldingen/Logo_zwart.png" alt="Logozwart"></a></div>   
+    
 <nav>
     <div class="topnav" id="myTopnav">
         <a href="home.html">Home</a>
-        <a href="studiefinanciering.html">Studiefinanciering</a>
-        <a href="jaaroverzicht.html" >Jaaroverzicht</a>
+        <a href="studiefinanciering.html">Student grants</a>
+        <a href="jaaroverzicht.html">Annual review</a>
         <div class="dropdown">
-            <button class="dropbtn">Vakken</button>
+            <button class="dropbtn">Subjects</button>
             <div class="dropdown-content">
-                <a href="htmlcss.html" >HTML &amp; CSS</a>
+                <a href="htmlcss.html">HTML &amp; CSS</a>
                 <a href="php.html">PHP</a>
-                <a href="project.html" id="active">Project</a>
-                <a href="informatiemanagement.html" >Informatie Management</a>
+                <a href="project.html">Project</a>
+                <a href="informatiemanagement.html">Information Management</a>
                 <a href="slb.html">SLB</a>
             </div>
         </div>
-        <a href="studieadvies.html">Studieadvies</a>
-        <a href="docenten.html" >Docenten</a>
+        <a href="studieadvies.html">Study advice</a>
+        <a href="docenten.html">Teachers</a>
         <a href="vragen.html">FAQ</a>
-        <a href="contact.html">Contact &amp; Vragen</a>
+        <a href="contact.html" id="active">Contact &amp; ask</a>
         <div class="dropdown">
-            <button class="dropbtn">NL</button>
+            <button class="dropbtn">EN</button>
             <div class="dropdown-content">
-                <a href="contact_en.html">EN</a>
+                <a href="contact.html">NL</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Lightmode</button>
+            <div class="dropdown-content">
+                <a href="#">Darkmode</a>
             </div>
         </div>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-</nav>    
-    
-<header>
+</nav>
 
-
-
-</header>
-  
-
-    
-
-
-
-    
-<div class="vlak3kwartpagina">
-     <h1>Project</h1>
-     <p>Tijdens project krijg jij samen met je groep bestaande uit een aantal andere studenten uit hetzelfde opleidingsgebied projecten die je moet voltooien, dit kan bijvoorbeeld het bouwen van een nagenoeg complete website zijn. Tijdens de projecturen op school kun jij samen met je groepje de verschillende nieuwe lesonderwerpen toepassen op de website van jouw groepje. Project is een goede manier om jouw vaardigheden met je groepje te testen.</p>
-    
-    
-</div>
-
-<div class="vlakvolledigepagina">
-    
-  <img src="afbeeldingen/afbeeldingproject.jpg" >
-  
+<div class="contactmidden">    
+    <div class="vlakvolledigepagina contacttitle">Contact form</div>
+        <form action="contact.php" method="post" name="form" class="vlakvolledigepagina">
+            <input class="contactblok" type="text" name="name" placeholder="Name" required>
+            <input class="contactblok" type="email" name="email" placeholder="Email address" required>
+            <input class="contactblok" type="tel" name="phone" placeholder="Phone number" required>
+            <textarea class="contactblok" style="resize: none" name="text" rows="10" placeholder="Ur message" required></textarea>
+                <button type="submit" name="submit" value="send" class="contactsend">
+                    Send
+                </button>
+        </form>
 </div>
     
 <footer>
@@ -92,52 +86,10 @@
         </div>
 
         <div class="copyrightvlak"> 
-        <p>© StudentOmatica, ontwikkeld door INF1E</p>
-        </div>
+        <p>© StudentOmatica, created by INF1E</p>
+        </div>  
         
-    
     </div>
-    
-        
 </footer>
-    
 </body>
-    
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
