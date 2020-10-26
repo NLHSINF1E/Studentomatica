@@ -509,15 +509,7 @@ nav {
 
 /* Jaarovericht */
 
-.Flex-container-jaar
-{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  
-
-}
-/*
+.ContJaaroverzicht
 {
   display: grid;
   grid-template-rows: 30% 30% 30% 100%;
@@ -526,7 +518,13 @@ nav {
   width: 100%;
   height: auto;
 }
-*/
+
+
+.Tabellenmaand
+{
+  border-collapse: collapse;
+  overflow-wrap: normal;
+}
 
 .Tabeljaar
 {
@@ -535,7 +533,6 @@ nav {
   border-width: 1px;
   border-color: black;
   background-color: #f3f3f3;
-  size: relative;
 }
 
 #Speciaaljaar
@@ -599,7 +596,7 @@ nav {
 }
 
 .EmmenMap {
-    grid-column: span 4 / auto;
+    grid-column: span 1 / auto;
     background-color: white;
     width: 100%;
     text-align: center;
@@ -620,6 +617,13 @@ nav {
 .bijtekst {
     font-size:50%;
     text-align: right;
+    align-content: right;
+        
+}
+
+.plattegrondemmen {
+    float:left;
+    
 }
 
 @media screen and (max-width: 600px) {
