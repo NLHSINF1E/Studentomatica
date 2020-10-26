@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project StudentOmatica</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="stylesheet.css">
+      <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+      <script type="text/javascript" src="javascript.js"></script>
+    </head>
+    
+<body class="container">
+    
+<div class="logo"><a href="home_en.html"><img src="afbeeldingen/Logo_zwart.png" alt="Logozwart"></a></div>   
+    
+<nav>
+    <div class="topnav" id="myTopnav">
+        <a href="home_en.html" id="active">Home</a>
+        <a href="studiefinanciering_en.html">Student grants</a>
+        <a href="jaaroverzicht_en.html">Annual review</a>
+        <div class="dropdown">
+            <button class="dropbtn">Subjects</button>
+            <div class="dropdown-content">
+                <a href="htmlcss_en.html">HTML &amp; CSS</a>
+                <a href="php_en.html">PHP</a>
+                <a href="project_en.html">Project</a>
+                <a href="informatiemanagement_en.html">Information Management</a>
+                <a href="slb_en.html">SLB</a>
+            </div>
+        </div>
+        <a href="studieadvies_en.html">Study advice</a>
+        <a href="docenten_en.html">Teachers</a>
+        <a href="vragen_en.html">FAQ</a>
+        <a href="contact_en.html">Contact &amp; Questions</a>
+        <div class="dropdown">
+            <button class="dropbtn">EN</button>
+            <div class="dropdown-content">
+                <a href="home.html">NL</a>
+            </div>
+        </div>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+</nav>
+<header>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="afbeeldingen/headerstudent1.jpg" style="width:100%" alt="headerstudent2">
+</div>
+
+<div class="mySlides fade">
+  <img src="afbeeldingen/headerstudent2.jpg" style="width:100%" alt="headerstudent3">
+</div>
+
+<div class="mySlides fade">
+  <img src="afbeeldingen/headerstudent3.jpg" style="width:100%" alt="headerstudent4">
+</div>
+
+<div class="mySlides fade">
+  <img src="afbeeldingen/headerstudent4.jpg" style="width:100%" alt="headerstudent1">
+</div>
+
+</div>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+</header>
+    
+<script>
+
+    var index = 0;
+    change();
+     
+    function change() {
+
+        var x = document.getElementsByClassName('mySlides');
+        for(var i = 0; i < x.length; i++) { 
+            x[i].style.display = "none"; 
+        }
+        index++;
+        if(index > x.length) { 
+            index = 1; 
+        }
+        x[index - 1].style.display = "block";
+        setTimeout(change, 3000);
+    }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+    }
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" activeheader", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " activeheader";
+    }
+    
+</script>
+    
+<div class="vlakvolledigepagina">
+     <h1 class="textcenter"> Welcome to the student platform "StudentOmatica"</h1>
+</div>
+    
+<div class="vlakvolledigepagina borderbottom marginbottom">
+    <div class="hometekst">
+     <p>The student platform of NHL Stenden: StudentOmatica is a student platform by and for students. Studentomatica advises, guides and supports students and pupils. On this platform, students, teachers and others can find all information related to their training. Student platform Studentomatica has been developed to make student life easier for students.</p>
+    </div>
+</div>
+    
+<div class="vlakvolledigepagina marginbottomnegatief"> 
+     <h1 class="textcenter">Latest news</h1>
+</div>  
+    
+<div class="halvepagina borderbottom">
+     <h1>Corona update - October 14, 2020</h1>
+     <p>On Tuesday evening, October 13, the government announced new corona measures. The impact of this on our education is small; fortunately many educational activities can still continue. But the impact on our life outside of school is significant. Go out for dinner, catch up with friends in a cafe and let off steam on the sports field; it is not possible at all. We are very disappointed with this, but we also understand that it is necessary to get the corona virus under control. We would like to urge everyone to continue to take his or her responsibility in this seriously.</p>       
+</div>
+    
+<div class="halvepagina borderbottom">
+    <h1>Ad top talents NHL Stenden</h1>
+     <p>Since January 2018, the Associate degree (Ad) has been an independent higher professional education program at level 5. Yet the Ad program is still very unknown. It is high time to pay more attention to this level of education and to put the Ad students at NHL Stenden in the limelight. Twelve Ad students have been nominated by their study program and employer as top Ad talent. On Thursday, October 22, three of them were nominated for the national Ad top talent prize by Executive Board member Oscar Couwenberg.</p> 
+</div>
+    
+<div class="vlakvolledigepagina margintop marginbottomnegatief">
+     <h1 class="textcenter">Agenda</h1>
+</div> 
+    
+<div class="halvepagina borderbottom">
+     <h1>(Online) Open Days</h1>
+     <p>Take the next step towards your further study during a visit to one of our (Online) Open Days. Taste the atmosphere, discover our full-time courses and listen to the experiences of our students. The following (online) events are planned for this academic year: Online Open Days
+     Full-time courses, on Tuesday 10, Wednesday 11 and Thursday 12 November from 17:00 to 21:00</p>
+</div>
+    
+<div class="halvepagina borderbottom">
+     <h1>Parents' evening</h1>
+     <p>Do you have children who are going to study and do you want to know more about what awaits them at higher vocational education? Then register for the Parent Evening of NHL Stenden University of Applied Sciences. During this Parent's Evening we will inform you about studying in general and specifically about studying at NHL Stenden. The parents' evening will take place on Wednesday March 17, 2021, from 7:30 PM to 8:30 PM.</p>
+</div>
+    
+<div class="widgettekstvlak margintop">
+   <div class="widgettekst">
+        <h1>9292 &amp; The Weather</h1>
+    </div> 
+</div>  
+    
+<div class="widgetvlak">
+    <div class="row">
+        <div class="widgetcontainer">                         
+            <div class="widgetreis">                        
+                <!-- 9292 widget v2 -->
+                <a href='https://9292.nl/' data-9292='widget' data-9292-text='' data-9292-ref='' data-9292-width='400' data-9292-height='550' data-9292-api-key='03ad27c8913145650bb7f600916c1ead98bfea60fe6051aaa213a48944e5a523' data-9292-widget-key='c19126b1b95a6f970968da08cadfe04c074ee0c8f51896a42e0f20d275f47a94' data-targetblank="on">Plan your trip</a>
+                <script src='https://9292.nl/static/js/widget.js'></script>
+            </div>
+        </div>
+
+        <div class="widgetcontainer">
+            <div class="widgetweer">
+                <a class="weatherwidget-io" href="https://forecast7.com/nl/52d796d90/emmen/" data-label_1="Emmen" data-label_2="Weer" data-font="Arial" data-theme="pure" >Emmen Weather</a>
+                <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                </script>
+            </div>
+        </div>                    
+    </div>
+</div>
+
+<footer>
+    
+    <div class="footercontainer">
+        <div class="footervlak">
+        <div class="footerimage"><img src="afbeeldingen/Logo_wit_trans.png" alt="footerlogo"></div>
+        
+        </div>
+        
+        <div class="footervlak">
+                <h5>Contact Information:</h5>
+                    <p class="contactp">NHL Stenden Hogeschool</p>
+                    <p class="contactp">Van Schaikweg 94</p>
+                    <p class="contactp">7811 KL Emmen</p>
+                    <p class="contactp"><a href="tel:310591853100">+31 (0)591 853 100</a></p>
+                    <p class="contactp contactmail"><a  href="mailto:receptie.emmen@nhlstenden.com">receptie.emmen@nhlstenden.com</a></p>
+        </div>
+    
+        <div class="footervlak">
+
+            <h5>Volg ons op Social Media:</h5>
+            <a href="http://www.facebook.nl/nhlstenden/" target="_blank"><img class="socialmedia" src="afbeeldingen/021-facebook.png" alt="socialfacebook"></a>
+            <a href="http://www.instagram.com/nhlstenden/" target="_blank"><img class="socialmedia" src="afbeeldingen/025-instagram.png" alt="socialinstagram"></a>
+            <a href="http://www.twitter.com/nhlstenden/" target="_blank"><img class="socialmedia" src="afbeeldingen/043-twitter.png" alt="socialtwitter"></a>
+
+        </div>
+
+        <div class="copyrightvlak"> 
+        <p>© StudentOmatica, created by INF1E</p>
+        </div>  
+        
+    </div>
+</footer>
+   
+</body>
+    
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
