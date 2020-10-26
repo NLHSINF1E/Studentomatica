@@ -13,18 +13,6 @@
     
 <div class="logo"><a href="home.html"><img src="afbeeldingen/Logozwarttransgroter.png" alt="Logozwart"></a></div>
 
-<nav>  
-    <div class="topmenu">
-        <nav>
-            <div class="topnav" id="myTopnav">
-            <a href="#home" class="active">Dark Mode?</a>
-            <a href="#news">NL</a>
-            <a href="#contact">ENG</a>
-            </div>
-        </nav>
-    </div>
-</nav>
-    
 <nav>
     <div class="topnav" id="myTopnav">
         <a href="home.html" id="active">Home</a>
@@ -43,7 +31,13 @@
         <a href="studieadvies.html">Studieadvies</a>
         <a href="docenten.html">Docenten</a>
         <a href="vragen.html">FAQ</a>
-        <a href="contact.html">Contact & Vragen</a>
+        <a href="contact.html">Contact &amp; Vragen</a>
+        <div class="dropdown">
+            <button class="dropbtn">NL</button>
+            <div class="dropdown-content">
+                <a href="contact_en.html">EN</a>
+            </div>
+        </div>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
 </nav>
@@ -86,48 +80,35 @@
      
     function change() {
 
-        //Collect all images with class 'slides'
         var x = document.getElementsByClassName('mySlides');
-
-        //Set all the images display to 'none' (invisible)
         for(var i = 0; i < x.length; i++) { 
             x[i].style.display = "none"; 
         }
-
-        //Increment index variable
         index++;
-
-        //Set index to 1 if it's greater than the amount of images
         if(index > x.length) { 
             index = 1; 
         }
-
-        //set image display to 'block' (visible)
         x[index - 1].style.display = "block";
-        
-
-        //set loop to change image every 3000 milliseconds (3 seconds)
         setTimeout(change, 3000);
     }
 
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
     }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" activeheader", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " activeheader";
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" activeheader", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " activeheader";
     }
     
 </script>
@@ -138,41 +119,112 @@
   
 </div>
     
-<div class="vlakvolledigepagina">
-     <h1>Tekst</h1>
-     <p>Vestibulum consectetur sit amet nisi ut consectetur. Praesent efficitur, nibh vitae fringilla scelerisque, est neque faucibus quam, in iaculis purus libero eget mauris. Curabitur et luctus sapien, ac gravida orci. Aliquam erat volutpat. In hac habitasse platea dictumst. Aenean commodo, arcu a commodo efficitur, libero dolor mollis turpis, non posuere orci leo eget enim. Curabitur sit amet elementum orci, pulvinar dignissim urna. Morbi id ex eu ex congue laoreet. Aenean tincidunt dolor justo, semper pretium libero luctus nec. Ut vulputate metus accumsan leo imperdiet tincidunt. Phasellus nec rutrum dolor. Cras imperdiet sollicitudin arcu, id interdum nibh fermentum in.</p>
+<div class="vlakvolledigepagina borderbottom marginbottom">
+    <div class="hometekst">
+     <p>Het studentenplatform van NHL Stenden: StudentOmatica is een studentenplatform van en voor studenten. Studentomatica adviseert, begeleidt en ondersteunt studenten en leerlingen. Op dit platform kunnen leerlingen, docenten en anderen alle informatie vinden wat met hun opleiding te maken heeft. Studentenplatform Studentomatica is ontwikkelt om het studentenleven van leerlingen makkelijker te maken.</p>
+    </div>
+    
+</div>
+
+ 
+    
+<div class="vlakvolledigepagina marginbottomnegatief">
+    
+     <h1 class="textcenter">Laatste Nieuws</h1>
+  
+</div>    
+<div class="halvepagina borderbottom">
+     <h1>Corona update – 14 oktober 2020</h1>
+     <p>Dinsdagavond 13 oktober kondigde de overheid nieuwe coronamaatregelen aan. De impact hiervan op ons onderwijs is klein; veel onderwijsactiviteiten kunnen gelukkig nog steeds doorgaan. Maar de impact op ons leven buiten school is aanzienlijk. Lekker uit eten, bijpraten met vrienden in een cafeetje en stoom afblazen op het sportveld; het is allemaal weer even niet mogelijk. We balen hier flink van, maar we begrijpen ook dat het nodig is om het coronavirus onder controle te krijgen. We willen iedereen nadrukkelijk verzoeken zijn of haar verantwoordelijkheid hierin serieus te blijven nemen.</p>       
+    
+</div>
+    
+<div class="halvepagina borderbottom">
+    <h1>Ad-toptalenten NHL Stenden</h1>
+     <p>De Associate degree (Ad) is sinds januari 2018 een eigenstandige hbo-opleiding op niveau 5. Toch is de Ad-opleiding nog erg onbekend. De hoogste tijd om wat meer aandacht te geven aan dit opleidingsniveau en de Ad- studenten van NHL Stenden in het zonnetje te zetten. Twaalf Ad-studenten zijn voorgedragen door hun opleiding en werkgever als Ad-toptalent. Donderdag 22 oktober zijn er drie daarvan genomineerd voor de landelijke Ad-toptalenten prijs door CvB lid Oscar Couwenberg.</p>
+     
+</div>
+    
+<div class="vlakvolledigepagina margintop marginbottomnegatief">
+    
+     <h1 class="textcenter">Agenda</h1>
+  
+</div>    
+<div class="halvepagina borderbottom">
+     <h1>(Online) Open Dagen</h1>
+     <p>Zet de volgende stap richting jouw vervolgstudie tijdens een bezoek aan één van onze (Online) Open Dagen. Proef de sfeer, ontdek onze voltijdopleidingen en luister naar de ervaringen van onze studenten. Voor dit studiejaar staan de volgende (online) evenementen gepland: Online Open Dagen
+     Voltijd opleidingen, op dinsdag 10, woensdag 11 en donderdag 12 november van 17:00 tot 21:00</p>
     
     
+</div>
+    
+<div class="halvepagina borderbottom">
+     <h1>Ouderavond</h1>
+     <p>Heb je kinderen die gaan studeren en wil je meer weten over wat hen te wachten staat op het hbo? Meld je dan aan voor de Ouderavond van NHL Stenden Hogeschool. Tijdens deze Ouderavond informeren we je over studeren in het algemeen en specifiek over studeren aan NHL Stenden. De ouderavond vindt plaats op woensdag 17 maart 2021, van 19:30 tot 20:30.</p>
+    
+    
+</div>
+    
+   
+
+    
+<div class="widgettekstvlak margintop">
+   <div class="widgettekst">
+        <h1>9292 &amp; Het weer</h1>
+    </div> 
+</div> 
+    
+    
+    
+<div class="widgetvlak">
+    <div class="row">
+        <div class="widgetcontainer">                         
+            <div class="widgetreis">                        
+                <!-- 9292 widget v2 -->
+                <a href='https://9292.nl/' data-9292='widget' data-9292-text='' data-9292-ref='' data-9292-width='400' data-9292-height='550' data-9292-api-key='03ad27c8913145650bb7f600916c1ead98bfea60fe6051aaa213a48944e5a523' data-9292-widget-key='c19126b1b95a6f970968da08cadfe04c074ee0c8f51896a42e0f20d275f47a94' data-targetblank="on">Plan mijn reis</a>
+                <script src='https://9292.nl/static/js/widget.js'></script>
+            </div>
+        </div>
+
+        <div class="widgetcontainer">
+            <div class="widgetweer">
+                <a class="weatherwidget-io" href="https://forecast7.com/nl/52d796d90/emmen/" data-label_1="Emmen" data-label_2="Weer" data-font="Arial" data-theme="pure" >Emmen Weer</a>
+                <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                </script>
+            </div>
+        </div>    
+                        
+    </div> 
+
 </div>
 
 <footer>
     
     <div class="footercontainer">
         <div class="footervlak">
-        <div class="footerimage"><img src="afbeeldingen/Logo_wit_trans.png" alt="footerlogo"></div>
+            <div class="footerimage"><img src="afbeeldingen/Logo_wit_trans.png" alt="footerlogo"></div>
         
         </div>
         
         <div class="footervlak">
-            <h5>Contact Informatie:</h5>
-            <table class="contacttabel">
-                <tr><td>NHL Stenden Hogeschool</td></tr>
-                <tr><td>Rengerslaan 8-10</td></tr>
-                <tr><td>8917 DD Leeuwarden</td></tr>
-                <tr><td><a href="tel:08899117000">088 991 7000</a></td></tr>
-                <tr><td><a  href="mailto:studentinfo@nhlstenden.com">studentinfo@nhlstenden.com</a>  </td></tr>
-            </table>
+                <h5>Contact Information:</h5>
+                    <p class="contactp">NHL Stenden Hogeschool</p>
+                    <p class="contactp">Van Schaikweg 94</p>
+                    <p class="contactp">7811 KL Emmen</p>
+                    <p class="contactp"><a href="tel:310591853100">+31 (0)591 853 100</a></p>
+                    <p class="contactp contactmail"><a  href="mailto:receptie.emmen@nhlstenden.com">receptie.emmen@nhlstenden.com</a></p>
         </div>
     
         <div class="footervlak">
-        <h5>Volg ons op Social Media:</h5>
-        <a href="http://facebook.nl>"><img class="socialmedia" src="afbeeldingen/021-facebook.png" alt="socialfacebook"></a>
-        <a href="http://instagram.com>"><img class="socialmedia" src="afbeeldingen/025-instagram.png" alt="socialinstagram"></a>
-        <a href="http://twitter.com>"><img class="socialmedia" src="afbeeldingen/043-twitter.png" alt="socialtwitter"></a>
+            <h5>Volg ons op Social Media:</h5>
+                <a href="http://www.facebook.nl/nhlstenden/"><img class="socialmedia" src="afbeeldingen/021-facebook.png" alt="socialfacebook"></a>
+                <a href="http://www.instagram.com/nhlstenden/"><img class="socialmedia" src="afbeeldingen/025-instagram.png" alt="socialinstagram"></a>
+                <a href="http://www.twitter.com/nhlstenden/"><img class="socialmedia" src="afbeeldingen/043-twitter.png" alt="socialtwitter"></a>
         </div>
 
         <div class="copyrightvlak"> 
-        <p>© StudentOmatica, ontwikkeld door INF1E</p>
+            <p>© StudentOmatica, ontwikkeld door INF1E</p>
         </div>
         
     
