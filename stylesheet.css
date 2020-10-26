@@ -141,6 +141,12 @@ header {
 
 }
 
+.vlakmiddenpagina {
+    grid-column: span 2 / 4;
+    background-color: white;
+
+}
+
 .vlak3kwartpagina {
     grid-column: span 3 / auto;
     width: 100%;
@@ -596,7 +602,7 @@ nav {
 }
 
 .EmmenMap {
-    grid-column: span 1 / auto;
+    grid-column: span 2 / auto;
     background-color: white;
     width: 100%;
     text-align: center;
@@ -610,25 +616,21 @@ nav {
 
 .plattegrondemmen{
     grid-column: span 4 / auto;
-    width: 100%;
+    width: 50%;
     text-align: center;
+    margin-left: 25%;
 }
 
 .bijtekst {
     font-size:50%;
     text-align: right;
     align-content: right;
-        
-}
-
-.plattegrondemmen {
-    float:left;
-    
 }
 
 @media screen and (max-width: 600px) {
-    .Emmenmap {
+    .plattegrondemmen{
         width: 100%;
+        margin-left:-1%;
     }
 }
 
