@@ -599,18 +599,32 @@ nav {
 }
 
 .EmmenMap {
-    grid-column: span 1 / auto;
+    grid-column: span 4 / auto;
     background-color: white;
     width: 100%;
-    align-content: right;
+   
         
 }
 
+.stages {
+    
+    grid-column: span 4 / auto;
+    width: 100%;
+    text-align: center;
+}
+
 .plattegrondemmen {
-    float:left;
+    grid-column: span 4 / auto;
+    background-color: white;
+    width: 100%; 
     
 }
 
+.bijtekst {
+    font-size:50%;
+    text-align: right;
+    
+}
 .darkmode{
     background-color: black;
 }
