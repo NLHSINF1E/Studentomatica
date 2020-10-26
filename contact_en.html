@@ -7,69 +7,59 @@
       <link rel="stylesheet" href="stylesheet.css">
       <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
       <script type="text/javascript" src="javascript.js"></script>
-    </head>
+  </head>
     
 <body class="container">
     
-<div class="logo"><a href="home.html"><img src="afbeeldingen/Logozwarttransgroter.png" alt="Logozwart"></a></div>
-
+<div class="logo"><a href="home.html"><img src="afbeeldingen/Logozwarttransgroter.png" alt="Logozwart"></a></div>   
+    
 <nav>
     <div class="topnav" id="myTopnav">
         <a href="home.html">Home</a>
-        <a href="studiefinanciering.html">Studiefinanciering</a>
-        <a href="jaaroverzicht.html" >Jaaroverzicht</a>
+        <a href="studiefinanciering.html">Student grants</a>
+        <a href="jaaroverzicht.html">Annual review</a>
         <div class="dropdown">
-            <button class="dropbtn">Vakken</button>
+            <button class="dropbtn">Subjects</button>
             <div class="dropdown-content">
-                <a href="htmlcss.html" >HTML &amp; CSS</a>
+                <a href="htmlcss.html">HTML &amp; CSS</a>
                 <a href="php.html">PHP</a>
                 <a href="project.html">Project</a>
-                <a href="informatiemanagement.html" >Informatie Management</a>
+                <a href="informatiemanagement.html">Information Management</a>
                 <a href="slb.html">SLB</a>
             </div>
         </div>
-        <a href="studieadvies.html">Studieadvies</a>
-        <a href="docenten.html" >Docenten</a>
-        <a href="vragen.html" id="active">FAQ</a>
-        <a href="contact.html">Contact &amp; Vragen</a>
+        <a href="studieadvies.html">Study advice</a>
+        <a href="docenten.html">Teachers</a>
+        <a href="vragen.html">FAQ</a>
+        <a href="contact.html" id="active">Contact &amp; ask</a>
         <div class="dropdown">
-            <button class="dropbtn">NL</button>
+            <button class="dropbtn">EN</button>
             <div class="dropdown-content">
-                <a href="contact_en.html">EN</a>
+                <a href="contact.html">NL</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Lightmode</button>
+            <div class="dropdown-content">
+                <a href="#">Darkmode</a>
             </div>
         </div>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
-</nav>  
-    
-<header>
+</nav>
 
-
-
-</header>
-  
-
-    
-<div class="vlakvolledigepagina">
-    
-     <h1>Vragen</h1>
-     <p>Hier kunt u vragen stellen aan de ontwikkelaars van deze site, ook kunt u hier de veelgestelde vragen terugvinden.</p>
-  
+<div class="contactmidden">    
+    <div class="vlakvolledigepagina contacttitle">Contact form</div>
+        <form action="contact.php" method="post" name="form" class="vlakvolledigepagina">
+            <input class="contactblok" type="text" name="name" placeholder="Name" required>
+            <input class="contactblok" type="email" name="email" placeholder="Email address" required>
+            <input class="contactblok" type="tel" name="phone" placeholder="Phone number" required>
+            <textarea class="contactblok" style="resize: none" name="text" rows="10" placeholder="Ur message" required></textarea>
+                <button type="submit" name="submit" value="send" class="contactsend">
+                    Send
+                </button>
+        </form>
 </div>
-
-<div class="vlakkwartpagina">
-     <h1>Stel uw vraag</h1>
-     <p>Vestibulum consectetur sit amet nisi ut consectetur. Praesent efficitur, nibh vitae fringilla scelerisque, est neque faucibus quam, in iaculis purus libero eget mauris. Curabitur et luctus sapien, ac gravida orci. Aliquam erat volutpat. In hac habitasse platea dictumst. Aenean commodo, arcu a commodo efficitur, libero dolor mollis turpis, non posuere orci leo eget enim. Curabitur sit amet elementum orci, pulvinar dignissim urna. Morbi id ex eu ex congue laoreet. Aenean tincidunt dolor justo, semper pretium libero luctus nec. Ut vulputate metus accumsan leo imperdiet tincidunt. Phasellus nec rutrum dolor. Cras imperdiet sollicitudin arcu, id interdum nibh fermentum in.</p>
-    
-    
-</div>
-    
-<div class="vlak3kwartpagina">
-  <h1>Veelgestelde vragen</h1>
-    <p>Hoe kan ik erachter komen welke docent ik voor welk vak heb?</p>
-      <p>Dit kunt u vinden onder het kopje docenten.</p>
-</div>
-
     
 <footer>
     
@@ -96,52 +86,10 @@
         </div>
 
         <div class="copyrightvlak"> 
-        <p>© StudentOmatica, ontwikkeld door INF1E</p>
-        </div>
+        <p>© StudentOmatica, created by INF1E</p>
+        </div>  
         
-    
     </div>
-    
-        
 </footer>
-    
 </body>
-    
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
