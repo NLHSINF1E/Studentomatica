@@ -1,8 +1,8 @@
-body {
+.body {
      font-family: 'Karla';
 }
 
-p {
+.p {
     font-size: 16px;
 }
 
@@ -31,7 +31,6 @@ p {
     display: grid;
     grid-template-columns: 200px 1fr 200px;
     grid-template-rows: auto 1fr auto;
-
   }
 }
 */
@@ -46,12 +45,12 @@ header {
     height: 100%;
     text-align: center;
     font-size: 1.4em;
+    background-color: #369;
     color: white;
 }
 
 .headerimage {
-    width:100%;
-    height:auto;
+    
 }
 
 /* Logo vlak */
@@ -66,6 +65,7 @@ header {
     margin-bottom: 1%;
 }
 
+<<<<<<< Updated upstream
 /*Top menu balk */
 
 .topul {
@@ -194,6 +194,8 @@ footer {
     
 }
 
+=======
+>>>>>>> Stashed changes
 
 /* Navigatiebalk */
 
@@ -321,6 +323,7 @@ nav {
   margin: 0 auto;
 }
 
+<<<<<<< Updated upstream
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -479,3 +482,49 @@ nav {
     font-size: 50%;
     
 }
+=======
+/* Main content vlak */
+
+main {
+    grid-column: span 1 /auto;
+    width: 100%;
+    background-color: white;
+    
+}
+
+
+
+
+ 
+/* Footer content */
+
+footer {
+    grid-column: span 4 / auto;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4em;
+    background-color: #77cccf;
+    color: white;
+}
+
+.footercontainer{
+    width: 100%;
+    height: auto;
+    margin:0;
+    padding:0;
+    border: 0;
+}
+
+.footervlak{
+    width: 50%;
+    float: left;
+}
+
+.contacttabel{
+    width: auto;
+    height: auto;
+    font-size: 16px;
+    margin:  0 auto;
+    margin-top: -4%; 
+}
+>>>>>>> Stashed changes
