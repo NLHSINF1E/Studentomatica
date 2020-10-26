@@ -426,10 +426,10 @@ nav {
   color: white; 
 }
 
-<<<<<<< Updated upstream
+
 /* Vragen */
 
-=======
+
 /* Studieadvies */
 
 .StudieAdviesCentre {
@@ -455,15 +455,27 @@ nav {
 }
 
 .EmmenMap {
-    grid-column: span 1 / auto;
+    grid-column: span 4 / auto; 
     background-color: white;
     width: 100%;
-    align-content: right;
         
 }
 
 .plattegrondemmen {
-    float:left;
+   width: 100%;
+    
     
 }
->>>>>>> Stashed changes
+
+.stages {
+    grid-column: span 4 / auto;
+    text-align: center;
+    
+    
+}
+
+.bijtekst {
+    text-align: right;
+    font-size: 50%;
+    
+}
