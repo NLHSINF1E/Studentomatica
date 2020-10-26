@@ -602,35 +602,32 @@ nav {
     grid-column: span 4 / auto;
     background-color: white;
     width: 100%;
-   
-        
+    text-align: center;
 }
 
 .stages {
-    
     grid-column: span 4 / auto;
     width: 100%;
     text-align: center;
 }
 
-.plattegrondemmen {
+.plattegrondemmen{
     grid-column: span 4 / auto;
-    background-color: white;
-    width: 100%; 
-    
+    width: 100%;
+    text-align: center;
 }
 
 .bijtekst {
     font-size:50%;
     text-align: right;
-    
-}
-.darkmode{
-    background-color: black;
 }
 
 @media screen and (max-width: 600px) {
-    .plattegrondemmen {
-        width:100%;
+    .Emmenmap {
+        width: 100%;
     }
+}
+
+.darkmode{
+    background-color: black;
 }
