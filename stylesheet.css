@@ -10,7 +10,18 @@ p {
   text-align: center;  
 }
 
+hr {
+  clear:both;
+  display:block;
+  width: 409%;               
+  background-color: #666;
+  height: 1px;
+}
 
+.borderbottom {
+    border-bottom: 1px solid;
+    border-color: #666;
+}
 
 /* Container voor de hele grid */
 
@@ -65,6 +76,12 @@ header {
     margin-top: 1%;
     margin-bottom: 1%;
 }
+
+@media screen and (max-width: 600px) {
+    .logo {
+        width: 100%;
+    }    
+    }
 
 /*Top menu balk */
 
@@ -143,7 +160,81 @@ header {
     
 }
 
+/* Widget */
 
+.widgetvlak {
+    grid-column: span 4 / auto;
+    width: 100%;
+    background-color: white;
+}
+
+.widgettekstvlak{
+    grid-column: span 4 / auto;
+    width: 100%;
+    background-color: white;
+}
+.widgettekst {
+    text-align: center;
+}
+
+/* Home pagina content */
+
+.hometekst {
+    width: 70%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.halvepagina {
+    grid-column: span 2 / auto;
+    width: 100%;
+    background-color: white;
+}
+
+.margintop {
+    margin-top: 2%;
+}
+
+.marginbottom {
+    margin-bottom: 2%;
+}
+
+.marginbottomnegatief {
+    margin-bottom: -1%;
+}
+
+/* widgets */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.widgetcontainer {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.widgetreis {
+    width: auto;
+}
+.widgetweer {
+    margin-top: 10%;
+}
+
+@media screen and (max-width: 900px) {
+    .widgetcontainer {
+    width: 100%;    
+    } 
+}
+
+@media screen and (max-width: 600px) {
+    .widgetcontainer {
+    width: 100%;    
+    }
+}
 /* Footer content */
 
 footer {
@@ -197,9 +288,26 @@ footer {
     height: auto;
     text-align: center;
     margin-top: 7%;
-    
 }
 
+@media screen and (max-width: 600px) {
+    .footervlak{
+    float: none;
+    margin: 0 auto;
+    }
+    .socialmedia {
+        width: 25%;
+    }
+    .footercontact {
+       margin-left: -30%;
+    }
+    .footerimage {
+        margin-left: -20%;
+    }
+    .contactmail{
+    margin-left: -40%;
+    }
+}
 
 /* Navigatiebalk */
 
@@ -445,7 +553,6 @@ nav {
 .ContTabellenjaar
 {
   display: grid;
-<<<<<<< Updated upstream
   grid-template-rows: 210px 200px 210px 250px;
   grid-template-columns: 300px 300px 300px;
   width: auto;
@@ -457,11 +564,9 @@ nav {
 {
   border-collapse: collapse;
   overflow-wrap: normal;
-=======
   grid-template-rows: 200px 200px 200px 10px;
   grid-template-columns: 200px 200px 200px 200px;
   grid-gap: 10px 20px;
->>>>>>> Stashed changes
 }
 */
 
@@ -479,7 +584,6 @@ nav {
   background-color: #3458a7;
   color: white; 
 }
-<<<<<<< Updated upstream
 
 
 @media screen and (max-width: 900px) {
@@ -582,6 +686,4 @@ nav {
     background-color: black;
 }
 
-=======
->
->>>>>>> Stashed changes
+.halvepagina
