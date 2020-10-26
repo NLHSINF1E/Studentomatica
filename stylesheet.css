@@ -515,9 +515,13 @@ nav {
     color: white;
 }
 
+@media screen and (max-width: 600px) {
+    .contactmidden{
+        grid-column: span 4 / auto;
+    }
+}
+
 /* Docenten */
-
-
 
 .docent{
     display: flex;
