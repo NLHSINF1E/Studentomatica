@@ -509,7 +509,15 @@ nav {
 
 /* Jaarovericht */
 
-.ContTabellenjaar
+.Flex-container-jaar
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+
+}
+/*
 {
   display: grid;
   grid-template-rows: 30% 30% 30% 100%;
@@ -518,6 +526,7 @@ nav {
   width: 100%;
   height: auto;
 }
+*/
 
 .Tabeljaar
 {
