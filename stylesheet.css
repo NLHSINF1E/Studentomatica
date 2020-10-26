@@ -587,6 +587,11 @@ nav {
       grid-template-columns: 300px 300px;
       }
 
+@media screen and (max-width: 600px) {
+    .ContJaaroverzicht{
+      grid-template-rows: 200px 210px 200px 210px 200px 210px;
+      grid-template-columns: 300px;
+      }
 
 /* .Tabellenlinks
 {
