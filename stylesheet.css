@@ -612,3 +612,14 @@ nav {
     background-color: black;
 }
 
+
+
+
+
+@media screen and (max-width: 600px) {
+    .plattegrondemmen {
+        width:100%;
+    }
+}
+
+
