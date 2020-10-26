@@ -631,46 +631,12 @@ nav {
 
 /* Studieadvies */
 
-.StudieAdviesCentre {
-    grid-column: span 4 / auto;
-    width: 100%;
-    background-color: white;
-    text-align: center; 
-    
-}
-
-.ICT-Beheer {
-    grid-column: span 2 / auto;
-    width: 100%;
-    background-color: white;
-    text-align: center; 
-}
-
-.TechnischeInformatica {
-    grid-column: span 2 / auto;
-    width: 100%;
-    background-color: white;
-    text-align: center; 
-}
-
-.EmmenMap {
-    grid-column: span 2 / auto;
-    background-color: white;
-    width: 100%;
-    text-align: center;
-}
-
-.stages {
-    grid-column: span 4 / auto;
-    width: 100%;
-    text-align: center;
-}
-
 .plattegrondemmen{
-    grid-column: span 4 / auto;
-    width: 50%;
-    text-align: center;
-    margin-left: 25%;
+    width: 100%;
+}
+    
+.plattegrondstenden{
+    grid-column: span 4 / 2;
 }
 
 .bijtekst {
@@ -682,12 +648,9 @@ nav {
 @media screen and (max-width: 600px) {
     .plattegrondemmen{
         width: 100%;
-        margin-left:-1%;
     }
 }
 
 .darkmode{
     background-color: black;
 }
-
-.halvepagina
