@@ -530,14 +530,14 @@ nav {
 .docent{
     display: flex;
     border-style: solid;
-    border-color: black;
+    border-color: #77cccf;
     margin-bottom: 1%;
 
 }
     
 .docentfoto{
     margin: 0 auto;
-    border-color: black;
+    border-color: #77cccf;
     
 }
 
@@ -553,7 +553,7 @@ nav {
 
 .tekstborder{
     border: 2px solid;
-    border-color: black;
+    border-color: #77cccf;
 }
 
 /* Jaarovericht */
