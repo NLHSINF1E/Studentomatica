@@ -22,8 +22,8 @@ function darkLight() {
 }
 
 /*Add 'checked' property to input if background == dark*/
-if ($('main').hasClass('dark')) {
-   $( '#checkBox' ).prop( "checked", true )
+if (localStorage.toggled != 'dark') {
+   $( '#checkBox' ).prop( "checked", false )
 } else {
-  $( '#checkBox' ).prop( "checked", false )
+  $( '#checkBox' ).prop( "checked", true )
 }
