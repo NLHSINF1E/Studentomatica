@@ -5,11 +5,11 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="stylesheet.css">
+      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
       <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
-      <script type="text/javascript" src="javascript.js"></script>
   </head>
     
-<body class="container">
+<body class="container" id="main">
     
 <div class="logo"><a href="home.html"><img src="afbeeldingen/Logo_zwart.png" alt="Logozwart"></a></div>
 
@@ -38,7 +38,12 @@
                 <a href="htmlcss_en.html">EN</a>
             </div>
         </div>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <a><label class="switch">
+            <input type="checkbox" onclick="darkLight()" id="checkBox" >
+            <span class="slider"></span>
+        </label> &#9965;</a>
+        <script src="javascript.js"></script>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
 </nav>   
     
@@ -50,7 +55,7 @@
 </div>
 <div class="vlakvolledigepagina">
     
-    <img src=afbeeldingen/afbeeldingHTMLCSS.jpg width= 324 pixels; height= 156 pixels>
+    <img src=afbeeldingen/afbeeldingHTMLCSS.jpg width= 324 pixels; height= >
   
 </div>
     
