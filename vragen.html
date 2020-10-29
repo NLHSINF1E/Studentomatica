@@ -1,125 +1,107 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Project StudentOmatica</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="stylesheet.css">
-      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-      <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
-  </head>
+    <head>
+        <title>Project StudentOmatica</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+    </head>
     
-<body class="container" id="main">
+    <body class="container" id="main">
     
-<div class="logo"><a href="home.html"><img src="afbeeldingen/Logo_zwart.png" alt="Logozwart"></a></div>
+        <div class="logo"><a href="home.html"><img src="afbeeldingen/Logo_zwart.png" alt="Logozwart"></a></div>
 
-<nav>
-    <div class="topnav" id="myTopnav">
-        <a href="home.html">Home</a>
-        <a href="studiefinanciering.html">Studiefinanciering</a>
-        <a href="jaaroverzicht.html" >Jaaroverzicht</a>
-        <div class="dropdown">
-            <button class="dropbtn">Vakken</button>
-            <div class="dropdown-content">
-                <a href="htmlcss.html" >HTML &amp; CSS</a>
-                <a href="php.html">PHP</a>
-                <a href="project.html">Project</a>
-                <a href="informatiemanagement.html" >Informatie Management</a>
-                <a href="slb.html">SLB</a>
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="home.html">Home</a>
+                <a href="studiefinanciering.html">Studiefinanciering</a>
+                <a href="jaaroverzicht.html" >Jaaroverzicht</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Vakken</button>
+                    <div class="dropdown-content">
+                        <a href="htmlcss.html" >HTML &amp; CSS</a>
+                        <a href="php.html">PHP</a>
+                        <a href="project.html">Project</a>
+                        <a href="informatiemanagement.html" >Informatie Management</a>
+                        <a href="slb.html">SLB</a>
+                    </div>
+                </div>
+                <a href="studieadvies.html">Studieadvies</a>
+                <a href="docenten.html" >Docenten</a>
+                <a href="vragen.html" id="active">FAQ</a>
+                <a href="contact.html">Contact &amp; Vragen</a>
+                <div class="dropdown">
+                    <button class="dropbtn">NL</button>
+                    <div class="dropdown-content">
+                        <a href="vragen_en.html">EN</a>
+                    </div>
+                </div>
+                <a> &#9965; <label class="switch">
+                    <input type="checkbox" onclick="darkLight()" id="checkBox" >
+                    <span class="slider"></span>
+                    </label> &#9790;</a>
+                <script src="javascript.js"></script>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
-        </div>
-        <a href="studieadvies.html">Studieadvies</a>
-        <a href="docenten.html" >Docenten</a>
-        <a href="vragen.html" id="active">FAQ</a>
-        <a href="contact.html">Contact &amp; Vragen</a>
-        <div class="dropdown">
-            <button class="dropbtn">NL</button>
-            <div class="dropdown-content">
-                <a href="vragen_en.html">EN</a>
-            </div>
-        </div>
-        <a> &#9965; <label class="switch">
-            <input type="checkbox" onclick="darkLight()" id="checkBox" >
-            <span class="slider"></span>
-        </label> &#9790;</a>
-        <script src="javascript.js"></script>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
-</nav>  
+        </nav>  
 
-<div class="textcenter vlakvolledigepagina marginbottom">   
-     <h1>Veelgestelde Vragen</h1>
-     <p>Op deze pagina kunt u veelgestelde vragen vinden die wij hier zo goed mogelijk voor u proberen te beantwoorden. </p> 
-</div>
+        <div class="textcenter vlakvolledigepagina marginbottom">   
+            <h1>Veelgestelde Vragen</h1>
+            <p>Op deze pagina kunt u veelgestelde vragen vinden die wij hier zo goed mogelijk voor u proberen te beantwoorden. </p> 
+        </div>
     
-<div class="vlakvolledigepagina">
+        <div class="vlakvolledigepagina">
+            <h2>Q: Waar kan ik terecht voor vragen aan de docent?</h2>
+            <h3>A: U kunt het beste de desbetreffende docent een e-mail sturen met uw vraag, de e-mail adressen van alle docenten kunt u vinden op de "Docenten" pagina.</h3>
+        </div>
     
-    <h2>Q: Waar kan ik terecht voor vragen aan de docent?</h2>
-    <h3>A: U kunt het beste de desbetreffende docent een e-mail sturen met uw vraag, de e-mail adressen van alle docenten kunt u vinden op de "Docenten" pagina.</h3>
-</div>
+        <div class="vlakvolledigepagina">     
+            <h2>Q: Waar vind ik mijn behaalde cijfers?</h2>
+            <h3>A: Aangezien dit een studentenplatform is voor studenten, docenten en ouders mogen wij geen behaalde cijfers van studenten laten zien, deze cijfers kunt u vinden op de website progress van NHL Stenden. </h3>
+        </div>
     
-<div class="vlakvolledigepagina">    
-    
-    <h2>Q: Waar vind ik mijn behaalde cijfers?</h2>
-    <h3>A: Aangezien dit een studentenplatform is voor studenten, docenten en ouders mogen wij geen behaalde cijfers van studenten laten zien, deze cijfers kunt u vinden op de website progress van NHL Stenden. </h3>
-</div>
-    
-<div class="vlakvolledigepagina">    
-    
-    <h2>Q: Is er ook een Engelstalige versie van het studentenplatform voor de internationale studenten?</h2>
-    <h3>A: Jazeker, deze kunt u vinden in het hoofdmenu bovenaan de site, daar staat onder het kopje "NL" de mogelijkheid om naar de engelstalige website te switchen. </h3>
-</div>
+        <div class="vlakvolledigepagina">      
+            <h2>Q: Is er ook een Engelstalige versie van het studentenplatform voor de internationale studenten?</h2>
+            <h3>A: Jazeker, deze kunt u vinden in het hoofdmenu bovenaan de site, daar staat onder het kopje "NL" de mogelijkheid om naar de engelstalige website te switchen. </h3>
+        </div>
 
-<div class="vlakvolledigepagina">    
+        <div class="vlakvolledigepagina">     
+            <h2>Q: Wanneer zijn de toetsweken? </h2>
+            <h3>A: Deze informatie kunt u vinden op onze website onder het kopje "jaaroverzicht".</h3>
+        </div>
     
-    <h2>Q: Wanneer zijn de toetsweken? </h2>
-    <h3>A: Deze informatie kunt u vinden op onze website onder het kopje "jaaroverzicht".</h3>
-</div>
-    
-<div class="vlakvolledigepagina">    
-    
-    <h2>Q: Hoe kan ik me inschrijven voor een opleiding op het NHL Stenden? </h2>
-    <h3>A: Hiervoor kun je naar de website van het NHL Stenden gaan, daar kun je een opleiding vinden die bij u past en kunt u zich gelijk inschrijven voor deze opleiding door op de knop "inschrijven voor deze opleiding" te klikken. </h3>
-</div>
+        <div class="vlakvolledigepagina">    
+            <h2>Q: Hoe kan ik me inschrijven voor een opleiding op het NHL Stenden? </h2>
+            <h3>A: Hiervoor kun je naar de website van het NHL Stenden gaan, daar kun je een opleiding vinden die bij u past en kunt u zich gelijk inschrijven voor deze opleiding door op de knop "inschrijven voor deze opleiding" te klikken. </h3>
+        </div>
   
-<footer>
-    
-    <div class="footercontainer">
-        <div class="footervlak">
-        <div class="footerimage"><img src="afbeeldingen/Logo_wit_trans.png" alt="footerlogo"></div>
-        
-        </div>
-        
-        <div class="footervlak">
-                <h5>Contact Information:</h5>
+        <footer>
+            <div class="footercontainer">
+                <div class="footervlak">
+                    <div class="footerimage"><img src="afbeeldingen/Logo_wit_trans.png" alt="footerlogo"></div>    
+                </div>   
+                <div class="footervlak">
+                    <h5>Contact Information:</h5>
                     <p class="contactp">NHL Stenden Hogeschool</p>
                     <p class="contactp">Van Schaikweg 94</p>
                     <p class="contactp">7811 KL Emmen</p>
                     <p class="contactp"><a href="tel:310591853100">+31 (0)591 853 100</a></p>
                     <p class="contactp contactmail"><a  href="mailto:receptie.emmen@nhlstenden.com">receptie.emmen@nhlstenden.com</a></p>
-        </div>
-    
-        <div class="footervlak">
-
-            <h5>Volg ons op Social Media:</h5>
-            <a href="http://www.facebook.nl/nhlstenden/" target="_blank"><img class="socialmedia" src="afbeeldingen/021-facebook.png" alt="socialfacebook"></a>
-            <a href="http://www.instagram.com/nhlstenden/" target="_blank"><img class="socialmedia" src="afbeeldingen/025-instagram.png" alt="socialinstagram"></a>
-            <a href="http://www.twitter.com/nhlstenden/" target="_blank"><img class="socialmedia" src="afbeeldingen/043-twitter.png" alt="socialtwitter"></a>
-
-        </div>
-
-        <div class="copyrightvlak"> 
-        <p>© StudentOmatica, ontwikkeld door INF1E</p>
-        </div>
-        
-    
-    </div>
-    
-        
-</footer>
-    
-</body>
-    
+                </div>
+                <div class="footervlak">
+                    <h5>Volg ons op Social Media:</h5>
+                    <a href="http://www.facebook.nl/nhlstenden/" target="_blank"><img class="socialmedia" src="afbeeldingen/021-facebook.png" alt="socialfacebook"></a>
+                    <a href="http://www.instagram.com/nhlstenden/" target="_blank"><img class="socialmedia" src="afbeeldingen/025-instagram.png" alt="socialinstagram"></a>
+                    <a href="http://www.twitter.com/nhlstenden/" target="_blank"><img class="socialmedia" src="afbeeldingen/043-twitter.png" alt="socialtwitter"></a>
+                </div>
+                <div class="copyrightvlak"> 
+                    <p>© StudentOmatica, ontwikkeld door INF1E</p>
+                </div>
+            </div>  
+        </footer>   
+    </body>    
 </html>
 
 

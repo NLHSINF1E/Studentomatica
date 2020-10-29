@@ -1,97 +1,84 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Project StudentOmatica</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="stylesheet.css">
-      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-      <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
-  </head>
+    <head>
+        <title>Project StudentOmatica</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+    </head>
     
-<body class="container" id="main">
+    <body class="container" id="main">
     
-<div class="logo"><a href="home_en.html"><img src="afbeeldingen/Logo_zwart.png" alt="Logozwart"></a></div>   
+        <div class="logo"><a href="home_en.html"><img src="afbeeldingen/Logo_zwart.png" alt="Logozwart"></a></div>   
     
-<nav>
-    <div class="topnav" id="myTopnav">
-        <a href="home_en.html">Home</a>
-        <a href="studiefinanciering_en.html">Student grants</a>
-        <a href="jaaroverzicht_en.html">Annual review</a>
-        <div class="dropdown">
-            <button class="dropbtn">Subjects</button>
-            <div class="dropdown-content">
-                <a href="htmlcss_en.html">HTML &amp; CSS</a>
-                <a href="php_en.html">PHP</a>
-                <a href="project_en.html">Project</a>
-                <a href="informatiemanagement_en.html">Information Management</a>
-                <a href="slb_en.html" id="active">SLB</a>
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="home_en.html">Home</a>
+                <a href="studiefinanciering_en.html">Student grants</a>
+                <a href="jaaroverzicht_en.html">Annual review</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Subjects</button>
+                    <div class="dropdown-content">
+                        <a href="htmlcss_en.html">HTML &amp; CSS</a>
+                        <a href="php_en.html">PHP</a>
+                        <a href="project_en.html">Project</a>
+                        <a href="informatiemanagement_en.html">Information Management</a>
+                        <a href="slb_en.html" id="active">SLB</a>
+                    </div>
+                </div>
+                <a href="studieadvies_en.html">Study advice</a>
+                <a href="docenten_en.html">Teachers</a>
+                <a href="vragen_en.html">FAQ</a>
+                <a href="contact_en.html">Contact &amp; Questions</a>
+                <div class="dropdown">
+                    <button class="dropbtn">EN</button>
+                    <div class="dropdown-content">
+                        <a href="slb.html">NL</a>
+                    </div>
+                </div>
+                <a> &#9965; <label class="switch">
+                    <input type="checkbox" onclick="darkLight()" id="checkBox" >
+                    <span class="slider"></span>
+                    </label> &#9790;</a>
+                <script src="javascript.js"></script>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
-        </div>
-        <a href="studieadvies_en.html">Study advice</a>
-        <a href="docenten_en.html">Teachers</a>
-        <a href="vragen_en.html">FAQ</a>
-        <a href="contact_en.html">Contact &amp; Questions</a>
-        <div class="dropdown">
-            <button class="dropbtn">EN</button>
-            <div class="dropdown-content">
-                <a href="slb.html">NL</a>
-            </div>
-        </div>
-        <a> &#9965; <label class="switch">
-            <input type="checkbox" onclick="darkLight()" id="checkBox" >
-            <span class="slider"></span>
-        </label> &#9790;</a>
-        <script src="javascript.js"></script>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
-</nav>
+        </nav>
  
-<div class="vlak3kwartpagina">
-     <h1>SCG (study career guidance) </h1>
-     <p>
-         Together with your group you get a SGC, a study career guide. This is a teachter appointed to you and your group by your school, this persone keeps track of the progress you make with your group and makes sure everything runs smoothly. Also most of the times this person is the point of contact and you can go to this person when troubles occur.</p>
-</div>
-    
-<div class="vlakvolledigepagina">
-     
-     <img src=afbeeldingen/afbeeldingslb.jpg>
-  
-</div>
-    
-<footer>
-    
-    <div class="footercontainer">
-        <div class="footervlak">
-        <div class="footerimage"><img src="afbeeldingen/Logo_wit_trans.png" alt="footerlogo"></div>
-        
+        <div class="vlak3kwartpagina">
+            <h1>SCG (study career guidance) </h1>  
+            <p>Together with your group you get a SGC, a study career guide. This is a teachter appointed to you and your group by your school, this persone keeps track of the progress you make with your group and makes sure everything runs smoothly. Also most of the times this person is the point of contact and you can go to this person when troubles occur.</p>
         </div>
-        
-        <div class="footervlak">
-                <h5>Contact Information:</h5>
+    
+        <div class="vlakvolledigepagina">   
+            <img src=afbeeldingen/afbeeldingslb.jpg>
+        </div>
+    
+        <footer>  
+            <div class="footercontainer">
+                <div class="footervlak">
+                    <div class="footerimage"><img src="afbeeldingen/Logo_wit_trans.png" alt="footerlogo"></div>
+                </div> 
+                <div class="footervlak">
+                    <h5>Contact Information:</h5>
                     <p class="contactp">NHL Stenden Hogeschool</p>
                     <p class="contactp">Van Schaikweg 94</p>
                     <p class="contactp">7811 KL Emmen</p>
                     <p class="contactp"><a href="tel:310591853100">+31 (0)591 853 100</a></p>
                     <p class="contactp contactmail"><a  href="mailto:receptie.emmen@nhlstenden.com">receptie.emmen@nhlstenden.com</a></p>
-        </div>
-    
-        <div class="footervlak">
-
-            <h5>Follow us on Social Media:</h5>
-            <a href="http://www.facebook.nl/nhlstenden/" target="_blank"><img class="socialmedia" src="afbeeldingen/021-facebook.png" alt="socialfacebook"></a>
-            <a href="http://www.instagram.com/nhlstenden/" target="_blank"><img class="socialmedia" src="afbeeldingen/025-instagram.png" alt="socialinstagram"></a>
-            <a href="http://www.twitter.com/nhlstenden/" target="_blank"><img class="socialmedia" src="afbeeldingen/043-twitter.png" alt="socialtwitter"></a>
-
-        </div>
-
-        <div class="copyrightvlak"> 
-        <p>© StudentOmatica, created by INF1E</p>
-        </div>  
-        
-    </div>
-</footer>
-    
-</body>
-    
+                </div>
+                <div class="footervlak">
+                    <h5>Follow us on Social Media:</h5>
+                    <a href="http://www.facebook.nl/nhlstenden/" target="_blank"><img class="socialmedia" src="afbeeldingen/021-facebook.png" alt="socialfacebook"></a>
+                    <a href="http://www.instagram.com/nhlstenden/" target="_blank"><img class="socialmedia" src="afbeeldingen/025-instagram.png" alt="socialinstagram"></a>
+                    <a href="http://www.twitter.com/nhlstenden/" target="_blank"><img class="socialmedia" src="afbeeldingen/043-twitter.png" alt="socialtwitter"></a>
+                </div>
+                <div class="copyrightvlak"> 
+                    <p>© StudentOmatica, created by INF1E</p>
+                </div>   
+            </div>
+        </footer>
+    </body>  
 </html>

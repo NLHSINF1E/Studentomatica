@@ -1,160 +1,143 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Project StudentOmatica</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="stylesheet.css">
-      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-      <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
-  </head>
+    <head>
+        <title>Project StudentOmatica</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+    </head>
     
-<body class="container" id="main">
+    <body class="container" id="main">
     
-<div class="logo"><a href="home_en.html"><img src="afbeeldingen/Logo_zwart.png" alt="Logozwart"></a></div>   
+        <div class="logo"><a href="home_en.html"><img src="afbeeldingen/Logo_zwart.png" alt="Logozwart"></a></div>   
     
-<nav>
-    <div class="topnav" id="myTopnav">
-        <a href="home_en.html">Home</a>
-        <a href="studiefinanciering_en.html">Student grants</a>
-        <a href="jaaroverzicht_en.html">Annual review</a>
-        <div class="dropdown">
-            <button class="dropbtn">Subjects</button>
-            <div class="dropdown-content">
-                <a href="htmlcss_en.html">HTML &amp; CSS</a>
-                <a href="php_en.html">PHP</a>
-                <a href="project_en.html">Project</a>
-                <a href="informatiemanagement_en.html">Information Management</a>
-                <a href="slb_en.html">SLB</a>
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="home_en.html">Home</a>
+                <a href="studiefinanciering_en.html">Student grants</a>
+                <a href="jaaroverzicht_en.html">Annual review</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Subjects</button>
+                    <div class="dropdown-content">
+                        <a href="htmlcss_en.html">HTML &amp; CSS</a>
+                        <a href="php_en.html">PHP</a>
+                        <a href="project_en.html">Project</a>
+                        <a href="informatiemanagement_en.html">Information Management</a>
+                        <a href="slb_en.html">SLB</a>
+                    </div>
+                </div>
+                <a href="studieadvies_en.html">Study advice</a>
+                <a href="docenten_en.html" id="active">Teachers</a>
+                <a href="vragen_en.html">FAQ</a>
+                <a href="contact_en.html">Contact &amp; Questions</a>
+                <div class="dropdown">
+                    <button class="dropbtn">EN</button>
+                    <div class="dropdown-content">
+                        <a href="docenten.html">NL</a>
+                    </div>
+                </div>
+                <a> &#9965; <label class="switch">
+                    <input type="checkbox" onclick="darkLight()" id="checkBox" >
+                    <span class="slider"></span>
+                    </label> &#9790;</a>
+                <script src="javascript.js"></script>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        </nav>
+    
+        <div class="vlakvolledigepagina"> 
+            <h1>Computer Science Teachers</h1>
+            <p>In the tab of "Teachers", you can see which teachers are all walking around the Informatics department of NHL Stenden in Emmen. You will see one teacher more often than another, but in this, you can see who   it is, and which subject they teach.</p>  
+            <div class="docent">
+                <div class="docentfoto tekstborder"> <img src="afbeeldingen/gerjan.png" class="gerjanfoto" >
+                    <p class="tekstcenter">Gerjan Van Oenen</p>  
+                </div>
+                <div class="tekstborder">
+                    <p>Hi, my name is Gerjan Van Oenen. I teach PHP at NHL Stenden in Emmen. You will also often see me walking around the IT department. I am X years old and live X. My hobbies are X. I also know all pokemon by heart, and I am seen as one of the best teachers in the Computer Science department. My email is gerjan.van.oenen@ nhlstenden.com</p>
+                </div>    
+            </div>
+            <div class="docent">
+                <div class="docentfoto tekstborder"> <img src="afbeeldingen/jan.png" class="gerjanfoto" >
+                    <p class="tekstcenter">Jan Doornbos</p>  
+                </div>
+                <div class="tekstborder">
+                    <p>I am Jan Doornbos and I'm 26 years old. Currently working for one year at NHL Stenden. You will meet me in the courses HTML / CSS, Java, Testing, and the projects. You can contact me, especially for technical programming questions. I also have knowledge of Objective-C, Swift, PHP, Javascript / Typescript. In my spare time, I like to take pictures or play the piano. In addition, I once launched a hobby project that is still very much used: insufficienthulp.nl. Hopefully, you are not needed as a student. My email is jan.doornbos@ nhlstenden.com</p>
+                </div>    
+            </div>   
+            <div class="docent">
+                <div class="docentfoto tekstborder"> <img src="afbeeldingen/robL.png" class="gerjanfoto" >
+                    <p class="tekstcenter">Rob Loves</p>  
+                </div>
+                <div class="tekstborder">
+                    <p>My name is Rob Loves, I live with my girlfriend and a dwarf hamster in the municipality of Emmen and have been working as a teacher at NHL Stenden since 2016. As a background, I have MBO Telematics and HBO Technical informatics and I am currently working on the master Serious Gaming. As a hobby, I have a Toyota Corolla GT from 1985 that I completely restored a few years ago. I also have a mountain bike, but unfortunately, it has been gathering dust for a while due to lack of time. Before I started as a teacher I worked as a software developer for more than 10 years. Besides developing software, mainly C # .Net, but also C ++, PHP, Java (Android) and Objective C (iOS), and the contact with customers I also did management tasks (Voip, SharePoint, SQL Server, Windows Server, Linux Server, etc.). Basically a bit of everything. In the first year of the training, I only provide the tutorials of information management this year. From the second year you will mainly meet me in the ICT management courses and in the third year in Threading in C #, the minors Certified Ethical Hacking and Secure Programming, and during internships and graduation. My email is rob.loves@ nhlstenden.com</p>
+                </div>    
+            </div> 
+            <div class="docent">
+                <div class="docentfoto tekstborder"> <img src="afbeeldingen/albert.png" class="gerjanfoto" >
+                    <p class="tekstcenter">Albert De Jonge</p>  
+                </div>
+                <div class="tekstborder">
+                    <p>I am Albert de Jonge, study career counselor within the NHLStenden Hogeschool for the Computer Science program. In addition, I am an internship teacher and I participate in the study program committee. Work here for over 20 years, before that I worked in psychiatry, as a teacher, and as a nurse. My email is albert.de.jonge@ nhlstenden.com</p>
+                </div>    
+            </div>
+            <div class="docent">
+                <div class="docentfoto tekstborder"> <img src="afbeeldingen/rene.png" class="gerjanfoto" >
+                    <p class="tekstcenter">Rene Laan</p>  
+                </div>
+                <div class="tekstborder">
+                    <p>Hi, my name is Rene Laan. I teach information management at NHL Stenden in Emmen. I am X years old and live X. My hobbies are X. My email is Rene.laan@ nhlstenden.com</p>
+                </div>    
+            </div>
+            <div class="docent">
+                <div class="docentfoto tekstborder"> <img src="afbeeldingen/empty-profile.png" class="gerjanfoto" >
+                    <p class="tekstcenter">Rob Smit</p>  
+                </div>
+                <div class="tekstborder">
+                    <p>Hi, my name is Rob Smit. You will often see me at the project hours at NHL Stenden in Emmen. I am X years old and live X. My hobbies are X. My email is rob.smit@ nhlstenden.com</p>
+                </div>    
+            </div>
+            <div class="docent">
+                <div class="docentfoto tekstborder"> <img src="afbeeldingen/empty-profile.png" class="gerjanfoto" >
+                    <p class="tekstcenter">Winnie van Schilt</p>  
+                </div>
+                <div class="tekstborder">
+                    <p>Hi, my name is Winnie van Schilt. At NHL Stenden in Emmen, you will often see me at workshops and PHP. I am X years old and live X. My hobbies are X. My email is winnie.van.schilt@ nhlstenden.com</p>
+                </div>    
+            </div>
+            <div class="docent">
+                <div class="docentfoto tekstborder"> <img src="afbeeldingen/raymond.png" class="gerjanfoto" >
+                    <p class="tekstcenter">Raymond Blankestijn</p>  
+                </div>
+                <div class="tekstborder">
+                    <p>My name is Raymond Blankestijn, I have been working at the NHL Stenden Hogeschool for 15 years now. Before this, I worked in IT for 10 years, first as a Software Engineer and later as a project manager. I am the year coordinator in the 1st year and responsible for the project "Student Platform". I live in Fluitenberg (near Hoogeveen). My email is raymond. blankestijn@ nhlstenden.com</p>
+                </div>    
             </div>
         </div>
-        <a href="studieadvies_en.html">Study advice</a>
-        <a href="docenten_en.html" id="active">Teachers</a>
-        <a href="vragen_en.html">FAQ</a>
-        <a href="contact_en.html">Contact &amp; Questions</a>
-        <div class="dropdown">
-            <button class="dropbtn">EN</button>
-            <div class="dropdown-content">
-                <a href="docenten.html">NL</a>
-            </div>
-        </div>
-        <a> &#9965; <label class="switch">
-            <input type="checkbox" onclick="darkLight()" id="checkBox" >
-            <span class="slider"></span>
-        </label> &#9790;</a>
-        <script src="javascript.js"></script>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
-</nav>
-    
-<div class="vlakvolledigepagina">
-    
-     <h1>Computer Science Teachers</h1>
-     <p>In the tab of "Teachers", you can see which teachers are all walking around the Informatics department of NHL Stenden in Emmen. You will see one teacher more often than another, but in this, you can see who it is, and which subject they teach.</p>  
-    
-<div class="docent">
-      <div class="docentfoto tekstborder"> <img src="afbeeldingen/gerjan.png" class="gerjanfoto" >
-    <p class="tekstcenter">Gerjan Van Oenen</p>  
-</div>
-    <div class="tekstborder">
-    <p>Hi, my name is Gerjan Van Oenen. I teach PHP at NHL Stenden in Emmen. You will also often see me walking around the IT department. I am X years old and live X. My hobbies are X. I also know all pokemon by heart, and I am seen as one of the best teachers in the Computer Science department. My email is gerjan.van.oenen@ nhlstenden.com</p>
-    </div>    
-</div>
-<div class="docent">
-      <div class="docentfoto tekstborder"> <img src="afbeeldingen/jan.png" class="gerjanfoto" >
-    <p class="tekstcenter">Jan Doornbos</p>  
-</div>
-    <div class="tekstborder">
-    <p>I am Jan Doornbos and I'm 26 years old. Currently working for one year at NHL Stenden. You will meet me in the courses HTML / CSS, Java, Testing, and the projects. You can contact me, especially for technical programming questions. I also have knowledge of Objective-C, Swift, PHP, Javascript / Typescript. In my spare time, I like to take pictures or play the piano. In addition, I once launched a hobby project that is still very much used: insufficienthulp.nl. Hopefully, you are not needed as a student. My email is jan.doornbos@ nhlstenden.com</p>
-    </div>    
-</div>   
-<div class="docent">
-      <div class="docentfoto tekstborder"> <img src="afbeeldingen/robL.png" class="gerjanfoto" >
-    <p class="tekstcenter">Rob Loves</p>  
-</div>
-    <div class="tekstborder">
-    <p>My name is Rob Loves, I live with my girlfriend and a dwarf hamster in the municipality of Emmen and have been working as a teacher at NHL Stenden since 2016. As a background, I have MBO Telematics and HBO Technical informatics and I am currently working on the master Serious Gaming. As a hobby, I have a Toyota Corolla GT from 1985 that I completely restored a few years ago. I also have a mountain bike, but unfortunately, it has been gathering dust for a while due to lack of time. Before I started as a teacher I worked as a software developer for more than 10 years. Besides developing software, mainly C # .Net, but also C ++, PHP, Java (Android) and Objective C (iOS), and the contact with customers I also did management tasks (Voip, SharePoint, SQL Server, Windows Server, Linux Server, etc.). Basically a bit of everything. In the first year of the training, I only provide the tutorials of information management this year. From the second year you will mainly meet me in the ICT management courses and in the third year in Threading in C #, the minors Certified Ethical Hacking and Secure Programming, and during internships and graduation. My email is rob.loves@ nhlstenden.com</p>
-    </div>    
-</div> 
-<div class="docent">
-      <div class="docentfoto tekstborder"> <img src="afbeeldingen/albert.png" class="gerjanfoto" >
-    <p class="tekstcenter">Albert De Jonge</p>  
-</div>
-    <div class="tekstborder">
-    <p>I am Albert de Jonge, study career counselor within the NHLStenden Hogeschool for the Computer Science program. In addition, I am an internship teacher and I participate in the study program committee. Work here for over 20 years, before that I worked in psychiatry, as a teacher, and as a nurse. My email is albert.de.jonge@ nhlstenden.com</p>
-    </div>    
-</div>
-    <div class="docent">
-      <div class="docentfoto tekstborder"> <img src="afbeeldingen/rene.png" class="gerjanfoto" >
-    <p class="tekstcenter">Rene Laan</p>  
-</div>
-    <div class="tekstborder">
-    <p>
-Hi, my name is Rene Laan. I teach information management at NHL Stenden in Emmen. I am X years old and live X. My hobbies are X. My email is Rene.laan@ nhlstenden.com</p>
-    </div>    
-</div>
-    <div class="docent">
-      <div class="docentfoto tekstborder"> <img src="afbeeldingen/empty-profile.png" class="gerjanfoto" >
-    <p class="tekstcenter">Rob Smit</p>  
-</div>
-    <div class="tekstborder">
-    <p>Hi, my name is Rob Smit. You will often see me at the project hours at NHL Stenden in Emmen. I am X years old and live X. My hobbies are X. My email is rob.smit@ nhlstenden.com</p>
-    </div>    
-</div>
-<div class="docent">
-      <div class="docentfoto tekstborder"> <img src="afbeeldingen/empty-profile.png" class="gerjanfoto" >
-    <p class="tekstcenter">Winnie van Schilt</p>  
-</div>
-    <div class="tekstborder">
-    <p>Hi, my name is Winnie van Schilt. At NHL Stenden in Emmen, you will often see me at workshops and PHP. I am X years old and live X. My hobbies are X. My email is winnie.van.schilt@ nhlstenden.com</p>
-    </div>    
-</div>
-    <div class="docent">
-      <div class="docentfoto tekstborder"> <img src="afbeeldingen/raymond.png" class="gerjanfoto" >
-    <p class="tekstcenter">Raymond Blankestijn</p>  
-</div>
-    <div class="tekstborder">
-    <p>My name is Raymond Blankestijn, I have been working at the NHL Stenden Hogeschool for 15 years now. Before this, I worked in IT for 10 years, first as a Software Engineer and later as a project manager. I am the year coordinator in the 1st year and responsible for the project "Student Platform". I live in Fluitenberg (near Hoogeveen). My email is raymond. blankestijn@ nhlstenden.com</p>
-    </div>    
-</div>
-</div>
-    
-    
-        
-    
-<footer>
-    
-    <div class="footercontainer">
-        <div class="footervlak">
-        <div class="footerimage"><img src="afbeeldingen/Logo_wit_trans.png" alt="footerlogo"></div>
-        
-        </div>
-        
-        <div class="footervlak">
-                <h5>Contact Information:</h5>
+        <footer>  
+            <div class="footercontainer">
+                <div class="footervlak">
+                    <div class="footerimage"><img src="afbeeldingen/Logo_wit_trans.png" alt="footerlogo"></div>
+                </div> 
+                <div class="footervlak">
+                    <h5>Contact Information:</h5>
                     <p class="contactp">NHL Stenden Hogeschool</p>
                     <p class="contactp">Van Schaikweg 94</p>
                     <p class="contactp">7811 KL Emmen</p>
                     <p class="contactp"><a href="tel:310591853100">+31 (0)591 853 100</a></p>
                     <p class="contactp contactmail"><a  href="mailto:receptie.emmen@nhlstenden.com">receptie.emmen@nhlstenden.com</a></p>
-        </div>
-    
-        <div class="footervlak">
-
-            <h5>Follow us on Social Media:</h5>
-            <a href="http://www.facebook.nl/nhlstenden/" target="_blank"><img class="socialmedia" src="afbeeldingen/021-facebook.png" alt="socialfacebook"></a>
-            <a href="http://www.instagram.com/nhlstenden/" target="_blank"><img class="socialmedia" src="afbeeldingen/025-instagram.png" alt="socialinstagram"></a>
-            <a href="http://www.twitter.com/nhlstenden/" target="_blank"><img class="socialmedia" src="afbeeldingen/043-twitter.png" alt="socialtwitter"></a>
-
-        </div>
-
-        <div class="copyrightvlak"> 
-        <p>© StudentOmatica, created by INF1E</p>
-        </div>  
-        
-    </div>
-</footer>
-    
-</body>
-    
+                </div>
+                <div class="footervlak">
+                    <h5>Follow us on Social Media:</h5>
+                    <a href="http://www.facebook.nl/nhlstenden/" target="_blank"><img class="socialmedia" src="afbeeldingen/021-facebook.png" alt="socialfacebook"></a>
+                    <a href="http://www.instagram.com/nhlstenden/" target="_blank"><img class="socialmedia" src="afbeeldingen/025-instagram.png" alt="socialinstagram"></a>
+                    <a href="http://www.twitter.com/nhlstenden/" target="_blank"><img class="socialmedia" src="afbeeldingen/043-twitter.png" alt="socialtwitter"></a>
+                </div>
+                <div class="copyrightvlak"> 
+                    <p>© StudentOmatica, created by INF1E</p>
+                </div>   
+            </div>
+        </footer>
+    </body>   
 </html>
