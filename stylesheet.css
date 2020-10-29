@@ -1,6 +1,7 @@
 /* Home */
 body {
      font-family: 'Karla';
+    grid-column: span 4 / auto;
 }
 
 p {
@@ -24,7 +25,18 @@ hr {
     border-color: #666;
 }
 
+/* Container voor de hele grid */
+
+.container {
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 80%;
+    margin: 0 auto;
+}
+
 /* darkmode */
+
 .dark {
   background: #545454;
     color: white;
@@ -89,16 +101,6 @@ input:checked + .slider:before {
 
 .slider:before {
   border-radius: 50%;
-}
-
-/* Container voor de hele grid */
-
-.container {
-    display: grid;
-    grid-gap: 1%;
-    grid-template-columns: 25% 25% 25% 25%;
-    width: 80%;
-    margin: 0 auto;
 }
 
 
