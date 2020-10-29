@@ -17,7 +17,7 @@ function darkLight() {
      
   } else {
     $('#main, p').toggleClass('dark', false);
-    localStorage.toggled = "container";
+    localStorage.toggled = "";
   }
 }
 

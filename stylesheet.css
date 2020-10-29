@@ -1,6 +1,30 @@
-/* darkmode */
+/* Home */
+body {
+     font-family: 'Karla';
+}
 
-/*TOGGLE COLORS*/
+p {
+    font-size: 16px;
+}
+
+.textcenter{
+  text-align: center;  
+}
+
+hr {
+  clear:both;
+  display:block;
+  width: 409%;               
+  background-color: #666;
+  height: 1px;
+}
+
+.borderbottom {
+    border-bottom: 1px solid;
+    border-color: #666;
+}
+
+/* darkmode */
 .dark {
   background: #545454;
     color: white;
@@ -65,33 +89,6 @@ input:checked + .slider:before {
 
 .slider:before {
   border-radius: 50%;
-}
-
-/* home */
-body {
-     font-family: 'Karla';
-    display: flex;
-}
-
-p {
-    font-size: 16px;
-}
-
-.textcenter{
-  text-align: center;  
-}
-
-hr {
-  clear:both;
-  display:block;
-  width: 409%;               
-  background-color: #666;
-  height: 1px;
-}
-
-.borderbottom {
-    border-bottom: 1px solid;
-    border-color: #666;
 }
 
 /* Container voor de hele grid */
