@@ -29,18 +29,6 @@ hr {
     border-color: #666;
 }
 
-/* Responsive grid container */
-/*
-@media (min-width: 768px) {
-  .container {
-    display: grid;
-    grid-template-columns: 200px 1fr 200px;
-    grid-template-rows: auto 1fr auto;
-
-  }
-}
-*/
-
 /* Header vlak */
 
 header {
@@ -617,17 +605,6 @@ nav {
     height: auto;
 }
 
-/*
-.Tabellenmaand
-{
-  border-collapse: collapse;
-  overflow-wrap: normal;
-  grid-template-rows: 200px 200px 200px 10px;
-  grid-template-columns: 200px 200px 200px 200px;
-  grid-gap: 10px 20px;
-}
-*/
-
 .Tabeljaar
 {
     text-align: center;
@@ -656,32 +633,6 @@ nav {
         grid-template-columns: 300px;
     }
 
-/* .Tabellenlinks
-{
-  display: grid;
-  grid-template-columns: 70%;
-  grid-template-rows: 30%;
-  grid-gap: 0% 20%;
-  grid-column: span 1 / 2;
-}
-
-.Tabellenmidden
-{
-  display: grid;
-  grid-template-columns: 70%;
-  grid-template-rows: 30%;
-  grid-gap: 0% 20%;
-  grid-column: span 2 / 3;
-}
-
-
-@media screen and (max-width: 600px) {
-    .ContJaaroverzicht{
-      grid-template-rows: 200px 200px 210px 200px 200px 200px 200px 210px 200px 200px 210px 200px;
-      grid-template-columns: 300px;
-      }
-
-/* Vragen */
 
 /* Studieadvies */
 
